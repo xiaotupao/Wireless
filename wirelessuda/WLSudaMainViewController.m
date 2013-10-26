@@ -43,7 +43,7 @@
     topScrollView=[[mainViewScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 160)];
     [topScrollView setImage];
     topScrollView.delegate = self;
-    //1111111
+    //1111
 #pragma mark - 定时器
     [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(runTimePage) userInfo:nil repeats:YES];
 #pragma mark - 初始化mypagecontrol
