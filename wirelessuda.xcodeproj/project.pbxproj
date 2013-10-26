@@ -195,27 +195,6 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
-		04740F2B181B87AC0057B109 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				04BFC6FB181C7CCD00B1CF88 /* Weather */,
-				04BFC6FA181C7CC800B1CF88 /* SchoolCalendar */,
-				04BFC6F9181C7CC200B1CF88 /* ScheduledBus */,
-				04BFC6F8181C7CBB00B1CF88 /* News */,
-				04BFC6F7181C7CB500B1CF88 /* GateWay */,
-				04BFC6F6181C7CAB00B1CF88 /* Card */,
-				04740F2C181B88EC0057B109 /* AccountSettings */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		04740F2C181B88EC0057B109 /* AccountSettings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AccountSettings;
-			sourceTree = "<group>";
-		};
 		04740F35181B90990057B109 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,42 +209,63 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		04BFC6F6181C7CAB00B1CF88 /* Card */ = {
+		04BFC707181C847F00B1CF88 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				04BFC708181C847F00B1CF88 /* AccountSettings */,
+				04BFC709181C847F00B1CF88 /* Card */,
+				04BFC70A181C847F00B1CF88 /* GateWay */,
+				04BFC70B181C847F00B1CF88 /* News */,
+				04BFC70C181C847F00B1CF88 /* ScheduledBus */,
+				04BFC70D181C847F00B1CF88 /* SchoolCalendar */,
+				04BFC70E181C847F00B1CF88 /* Weather */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		04BFC708181C847F00B1CF88 /* AccountSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountSettings;
+			sourceTree = "<group>";
+		};
+		04BFC709181C847F00B1CF88 /* Card */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Card;
 			sourceTree = "<group>";
 		};
-		04BFC6F7181C7CB500B1CF88 /* GateWay */ = {
+		04BFC70A181C847F00B1CF88 /* GateWay */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = GateWay;
 			sourceTree = "<group>";
 		};
-		04BFC6F8181C7CBB00B1CF88 /* News */ = {
+		04BFC70B181C847F00B1CF88 /* News */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = News;
 			sourceTree = "<group>";
 		};
-		04BFC6F9181C7CC200B1CF88 /* ScheduledBus */ = {
+		04BFC70C181C847F00B1CF88 /* ScheduledBus */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ScheduledBus;
 			sourceTree = "<group>";
 		};
-		04BFC6FA181C7CC800B1CF88 /* SchoolCalendar */ = {
+		04BFC70D181C847F00B1CF88 /* SchoolCalendar */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = SchoolCalendar;
 			sourceTree = "<group>";
 		};
-		04BFC6FB181C7CCD00B1CF88 /* Weather */ = {
+		04BFC70E181C847F00B1CF88 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -306,8 +306,8 @@
 		755E149618043D8D00C7925B /* wirelessuda */ = {
 			isa = PBXGroup;
 			children = (
+				04BFC707181C847F00B1CF88 /* Modules */,
 				04740F35181B90990057B109 /* Images */,
-				04740F2B181B87AC0057B109 /* Modules */,
 				04740F1E181B86710057B109 /* CustomView */,
 				04740F25181B86870057B109 /* WirelessudaAppDelegate.h */,
 				04740F26181B86870057B109 /* WirelessudaAppDelegate.m */,
