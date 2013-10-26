@@ -22,6 +22,7 @@
     }
     mainViewController = [[WLSudaMainViewController alloc]init];
     self.window.rootViewController = mainViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     return YES;
