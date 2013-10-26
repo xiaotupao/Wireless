@@ -41,6 +41,7 @@
     }
     
     topScrollView=[[mainViewScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 160)];
+    topScrollView.delegate=self;
     [topScrollView setImage];
 #pragma mark - 定时器
     [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(runTimePage) userInfo:nil repeats:YES];
