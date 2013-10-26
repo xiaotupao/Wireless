@@ -25,7 +25,6 @@
 		04740F24181B86710057B109 /* mainViewScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740F22181B86710057B109 /* mainViewScrollView.m */; };
 		04740F29181B86870057B109 /* WirelessudaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740F26181B86870057B109 /* WirelessudaAppDelegate.m */; };
 		04740F2A181B86870057B109 /* WLSudaMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740F28181B86870057B109 /* WLSudaMainViewController.m */; };
-		04740F34181B88EC0057B109 /* 未命名文件夹.textClipping in Resources */ = {isa = PBXBuildFile; fileRef = 04740F2D181B88EC0057B109 /* 未命名文件夹.textClipping */; };
 		04740F3D181B90DC0057B109 /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F36181B90DC0057B109 /* bus.png */; };
 		04740F3E181B90DC0057B109 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F37181B90DC0057B109 /* calendar.png */; };
 		04740F3F181B90DC0057B109 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F38181B90DC0057B109 /* card.png */; };
@@ -44,7 +43,6 @@
 		755E14AC18043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
 		755E14B418043D8D00C7925B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755E14B218043D8D00C7925B /* InfoPlist.strings */; };
 		755E14B618043D8D00C7925B /* wirelessudaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755E14B518043D8D00C7925B /* wirelessudaTests.m */; };
-		E5AAAF40181B9A160092ED93 /* WLSudaNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AAAF3F181B9A160092ED93 /* WLSudaNewsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +93,6 @@
 		04740F26181B86870057B109 /* WirelessudaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WirelessudaAppDelegate.m; sourceTree = "<group>"; };
 		04740F27181B86870057B109 /* WLSudaMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSudaMainViewController.h; sourceTree = "<group>"; };
 		04740F28181B86870057B109 /* WLSudaMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSudaMainViewController.m; sourceTree = "<group>"; };
-		04740F2D181B88EC0057B109 /* 未命名文件夹.textClipping */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "未命名文件夹.textClipping"; sourceTree = "<group>"; };
 		04740F36181B90DC0057B109 /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bus.png; sourceTree = "<group>"; };
 		04740F37181B90DC0057B109 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		04740F38181B90DC0057B109 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 		755E14B118043D8D00C7925B /* wirelessudaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wirelessudaTests-Info.plist"; sourceTree = "<group>"; };
 		755E14B318043D8D00C7925B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		755E14B518043D8D00C7925B /* wirelessudaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wirelessudaTests.m; sourceTree = "<group>"; };
-		E5AAAF3E181B9A160092ED93 /* WLSudaNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSudaNewsView.h; sourceTree = SOURCE_ROOT; };
-		E5AAAF3F181B9A160092ED93 /* WLSudaNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSudaNewsView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,13 +198,13 @@
 		04740F2B181B87AC0057B109 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				04BFC6FB181C7CCD00B1CF88 /* Weather */,
+				04BFC6FA181C7CC800B1CF88 /* SchoolCalendar */,
+				04BFC6F9181C7CC200B1CF88 /* ScheduledBus */,
+				04BFC6F8181C7CBB00B1CF88 /* News */,
+				04BFC6F7181C7CB500B1CF88 /* GateWay */,
+				04BFC6F6181C7CAB00B1CF88 /* Card */,
 				04740F2C181B88EC0057B109 /* AccountSettings */,
-				04740F2E181B88EC0057B109 /* Card */,
-				04740F2F181B88EC0057B109 /* GateWay */,
-				04740F30181B88EC0057B109 /* News */,
-				04740F31181B88EC0057B109 /* ScheduledBus */,
-				04740F32181B88EC0057B109 /* SchoolCalendar */,
-				04740F33181B88EC0057B109 /* Weather */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -217,53 +212,8 @@
 		04740F2C181B88EC0057B109 /* AccountSettings */ = {
 			isa = PBXGroup;
 			children = (
-				04740F2D181B88EC0057B109 /* 未命名文件夹.textClipping */,
 			);
 			path = AccountSettings;
-			sourceTree = "<group>";
-		};
-		04740F2E181B88EC0057B109 /* Card */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Card;
-			sourceTree = "<group>";
-		};
-		04740F2F181B88EC0057B109 /* GateWay */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GateWay;
-			sourceTree = "<group>";
-		};
-		04740F30181B88EC0057B109 /* News */ = {
-			isa = PBXGroup;
-			children = (
-				E5AAAF3E181B9A160092ED93 /* WLSudaNewsView.h */,
-				E5AAAF3F181B9A160092ED93 /* WLSudaNewsView.m */,
-			);
-			path = News;
-			sourceTree = "<group>";
-		};
-		04740F31181B88EC0057B109 /* ScheduledBus */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ScheduledBus;
-			sourceTree = "<group>";
-		};
-		04740F32181B88EC0057B109 /* SchoolCalendar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SchoolCalendar;
-			sourceTree = "<group>";
-		};
-		04740F33181B88EC0057B109 /* Weather */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Weather;
 			sourceTree = "<group>";
 		};
 		04740F35181B90990057B109 /* Images */ = {
@@ -278,6 +228,48 @@
 				04740F3C181B90DC0057B109 /* gateway.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		04BFC6F6181C7CAB00B1CF88 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		04BFC6F7181C7CB500B1CF88 /* GateWay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GateWay;
+			sourceTree = "<group>";
+		};
+		04BFC6F8181C7CBB00B1CF88 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		04BFC6F9181C7CC200B1CF88 /* ScheduledBus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScheduledBus;
+			sourceTree = "<group>";
+		};
+		04BFC6FA181C7CC800B1CF88 /* SchoolCalendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SchoolCalendar;
+			sourceTree = "<group>";
+		};
+		04BFC6FB181C7CCD00B1CF88 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		755E148418043D8D00C7925B = {
@@ -432,7 +424,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04740F3D181B90DC0057B109 /* bus.png in Resources */,
-				04740F34181B88EC0057B109 /* 未命名文件夹.textClipping in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,
@@ -466,7 +457,6 @@
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
 				04740F17181B85100057B109 /* SDWebImageManager.m in Sources */,
-				E5AAAF40181B9A160092ED93 /* WLSudaNewsView.m in Sources */,
 				04740F19181B85100057B109 /* UIButton+WebCache.m in Sources */,
 				04740F1B181B85100057B109 /* UIImage+MultiFormat.m in Sources */,
 				04740F24181B86710057B109 /* mainViewScrollView.m in Sources */,
