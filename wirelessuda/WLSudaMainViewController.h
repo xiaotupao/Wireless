@@ -1,0 +1,18 @@
+//
+//  WLSudaMainViewController.h
+//  wirelessuda
+//
+//  Created by Mac on 13-10-23.
+//  Copyright (c) 2013年 苏州大学网络中心. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "mainViewScrollView.h"
+#import "CustomButton.h"
+
+@interface WLSudaMainViewController : UIViewController
+
+@property (strong, nonatomic)UIPageControl *pageControl;
+@property (strong, nonatomic)mainViewScrollView *topScrollView;
+
+@end
