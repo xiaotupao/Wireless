@@ -3,7 +3,7 @@
 //  wirelessuda
 //
 //  Created by ivanfee on 13-10-17.
-//  Copyright (c) 2013年 苏州大学网络中心. All rights reserved.
+//  Copyright (c) 2013年 苏州大学信息化建设与管理中心. All rights reserved.
 //
 
 #import "WirelessudaAppDelegate.h"
