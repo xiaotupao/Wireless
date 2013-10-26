@@ -10,7 +10,7 @@
 #import "mainViewScrollView.h"
 #import "CustomButton.h"
 
-@interface WLSudaMainViewController : UIViewController
+@interface WLSudaMainViewController : UIViewController<UIScrollViewDelegate>
 
 @property (strong, nonatomic)UIPageControl *pageControl;
 @property (strong, nonatomic)mainViewScrollView *topScrollView;
