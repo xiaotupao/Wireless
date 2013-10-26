@@ -43,7 +43,6 @@
 		755E14AC18043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
 		755E14B418043D8D00C7925B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755E14B218043D8D00C7925B /* InfoPlist.strings */; };
 		755E14B618043D8D00C7925B /* wirelessudaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755E14B518043D8D00C7925B /* wirelessudaTests.m */; };
-		E5F82BE3181BAE6B00663154 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F82BE2181BAE6B00663154 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +114,6 @@
 		755E14B118043D8D00C7925B /* wirelessudaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wirelessudaTests-Info.plist"; sourceTree = "<group>"; };
 		755E14B318043D8D00C7925B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		755E14B518043D8D00C7925B /* wirelessudaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wirelessudaTests.m; sourceTree = "<group>"; };
-		E5F82BE1181BAE6B00663154 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = SOURCE_ROOT; };
-		E5F82BE2181BAE6B00663154 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,8 +247,6 @@
 		04BFC6F8181C7CBB00B1CF88 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				E5F82BE1181BAE6B00663154 /* MyClass.h */,
-				E5F82BE2181BAE6B00663154 /* MyClass.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -467,7 +462,6 @@
 				04740F24181B86710057B109 /* mainViewScrollView.m in Sources */,
 				04740F1D181B85100057B109 /* UIImageView+WebCache.m in Sources */,
 				04740F16181B85100057B109 /* SDWebImageDownloaderOperation.m in Sources */,
-				E5F82BE3181BAE6B00663154 /* MyClass.m in Sources */,
 				04740F1A181B85100057B109 /* UIImage+GIF.m in Sources */,
 				04740F13181B85100057B109 /* SDWebImageCompat.m in Sources */,
 				04740F11181B85100057B109 /* NSData+GIF.m in Sources */,
