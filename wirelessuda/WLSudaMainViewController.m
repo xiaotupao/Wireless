@@ -57,13 +57,13 @@
     
 #pragma mark - 模块
     CGFloat height=topScrollView.frame.size.height+15;
-    NSMutableArray *icons=[NSMutableArray arrayWithObjects:@"news.png", @"gateway.png", @"bus.png", @"calendar.png", @"card.png",@"weather.png",@"bus.png",@"news.png",@"settings.png", nil];
+    NSMutableArray *icons=[NSMutableArray arrayWithObjects:@"news.png", @"gateway.png", @"bus.png", @"calendar.png", @"card.png",@"weather.png",@"bus.png",@"login.png",@"settings.png", nil];
     NSMutableArray *names=[NSMutableArray arrayWithObjects:@"苏大新闻", @"网关应用", @"班车路线", @"苏大校历", @"苏大通",@"即时天气",@"校内通知",@"网关登录",@"账号设置", nil];
     for (int i=0,j=-1; i<[icons count]; i++) {
         if ((i)%4 == 0) {
             j++;
         }
-        CustomButton *button=[[CustomButton alloc]initWithFrame:CGRectMake(15+(i-j*4)*75, height+110*j, 65, 85)];
+        CustomButton *button=[[CustomButton alloc]initWithFrame:CGRectMake(15+(i-j*4)*75, height+100*j, 65, 85)];
         [button.icon setBackgroundImage:[UIImage imageNamed:[icons objectAtIndex:i]] forState:UIControlStateNormal];
         button.name.text=[names objectAtIndex:i];
         button.icon.tag=i;
