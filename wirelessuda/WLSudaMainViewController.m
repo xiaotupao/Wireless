@@ -3,7 +3,7 @@
 //  wirelessuda
 //
 //  Created by Mac on 13-10-23.
-//  Copyright (c) 2013年 苏州大学网络中心. All rights reserved.
+//  Copyright (c) 2013年 苏州大学信息化建设与管理中心. All rights reserved.
 //
 
 #import "WLSudaMainViewController.h"
@@ -44,6 +44,7 @@
     topScrollView=[[mainViewScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 160)];
     topScrollView.delegate=self;
     [topScrollView setImage];
+    topScrollView.delegate = self;
 #pragma mark - 定时器
     [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(runTimePage) userInfo:nil repeats:YES];
 #pragma mark - 初始化mypagecontrol
@@ -155,6 +156,7 @@
     }
 }
 
+#pragma mark - 计时器方法
 - (void)runTimePage
 {
     int page = pageControl.currentPage;
@@ -164,7 +166,6 @@
     [self turnPage];
 }
 
-//   ??????????????????????????????????????????????
 #pragma mark - 选择器的方法
 - (void)turnPage
 {

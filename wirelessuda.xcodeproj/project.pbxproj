@@ -89,7 +89,7 @@
 		04740F0E181B85100057B109 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		04740F0F181B85100057B109 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		04740F1F181B86710057B109 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
-		04740F20181B86710057B109 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		04740F20181B86710057B109 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomButton.m; sourceTree = "<group>"; usesTabs = 0; };
 		04740F21181B86710057B109 /* mainViewScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewScrollView.h; sourceTree = "<group>"; };
 		04740F22181B86710057B109 /* mainViewScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewScrollView.m; sourceTree = "<group>"; };
 		04740F25181B86870057B109 /* WirelessudaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WirelessudaAppDelegate.h; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "苏州大学网络中心";
+				ORGANIZATIONNAME = "苏州大学信息化建设与管理中心";
 				TargetAttributes = {
 					755E14A718043D8D00C7925B = {
 						TestTargetID = 755E148C18043D8D00C7925B;
