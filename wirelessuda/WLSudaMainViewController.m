@@ -7,6 +7,7 @@
 //
 
 #import "WLSudaMainViewController.h"
+#import "GateWayLoginViewController.h"
 
 @interface WLSudaMainViewController ()
 
@@ -55,8 +56,8 @@
     
 #pragma mark - 模块
     CGFloat height=topScrollView.frame.size.height+15;
-    NSMutableArray *icons=[NSMutableArray arrayWithObjects:@"news.png", @"gateway.png", @"bus.png", @"calendar.png", @"card.png",@"weather.png",@"settings.png", nil];
-    NSMutableArray *names=[NSMutableArray arrayWithObjects:@"苏大新闻", @"网关应用", @"班车路线", @"苏大校历", @"苏大通",@"即时天气",@"账号设置", nil];
+    NSMutableArray *icons=[NSMutableArray arrayWithObjects:@"news.png", @"gateway.png", @"bus.png", @"calendar.png", @"card.png",@"weather.png",@"bus.png",@"news.png",@"settings.png", nil];
+    NSMutableArray *names=[NSMutableArray arrayWithObjects:@"苏大新闻", @"网关应用", @"班车路线", @"苏大校历", @"苏大通",@"即时天气",@"校内通知",@"网关登录",@"账号设置", nil];
     for (int i=0,j=-1; i<[icons count]; i++) {
         if ((i)%4 == 0) {
             j++;
@@ -68,7 +69,6 @@
         [button.icon addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
     }
-
     
     [self.view addSubview:topScrollView];
     [self.view addSubview:pageControl];
@@ -111,6 +111,19 @@
         }
             break;
         case 6:
+        {
+            //校内通知
+        }
+            break;
+        case 7:
+        {
+            //网关登录
+            GateWayLoginViewController *gateWayLogin=[[GateWayLoginViewController alloc]initWithNibName:nil bundle:nil];
+            //gateWayLogin.title=@"网关登录";
+            [self presentModalViewController:gateWayLogin animated:YES];
+        }
+            break;
+        case 8:
         {
             //账号设置
         }
