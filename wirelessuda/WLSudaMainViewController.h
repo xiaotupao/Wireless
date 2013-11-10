@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic)UIPageControl *pageControl;
 @property (strong, nonatomic)mainViewScrollView *topScrollView;
+@property (strong, nonatomic)UIView *background;
 
 @end

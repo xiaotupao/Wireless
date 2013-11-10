@@ -16,15 +16,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-        self.window.frame= [[UIScreen mainScreen] applicationFrame];
-        [application setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+//        self.window.frame= [[UIScreen mainScreen] applicationFrame];
+//        [application setStatusBarStyle:UIStatusBarStyleLightContent];
+//    }
     mainViewController = [[WLSudaMainViewController alloc]init];
-    self.window.rootViewController = mainViewController;
-    self.window.backgroundColor = [UIColor whiteColor];
+    UINavigationController *mainNavigationController=[[UINavigationController alloc]initWithRootViewController:mainViewController];
+    self.window.rootViewController = mainNavigationController;
+    [self.window addSubview:mainNavigationController.view];
     [self.window makeKeyAndVisible];
-    
+    mainNavigationController.navigationBar.translucent=YES;
+    //[application setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }
 

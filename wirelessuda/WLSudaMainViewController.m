@@ -16,12 +16,15 @@
 @implementation WLSudaMainViewController
 @synthesize topScrollView;
 @synthesize pageControl;
+@synthesize background;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.navigationItem.title=@"首页";
+        self.view.backgroundColor=[UIColor blackColor];
     }
     return self;
 }
@@ -29,8 +32,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view。
     
+#pragma mark-定义第二层背景
+    background=[[UIView  alloc]initWithFrame:CGRectMake(0, 20, 320, SCREEN_HEIGHT-20)];
+    background.backgroundColor=[UIColor whiteColor];
     
     //??????????图标命名
     if (SCREEN_HEIGHT>480) {
@@ -68,11 +74,12 @@
         button.name.text=[names objectAtIndex:i];
         button.icon.tag=i;
         [button.icon addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
+        [background addSubview:button];
     }
     
-    [self.view addSubview:topScrollView];
-    [self.view addSubview:pageControl];
+    [background addSubview:topScrollView];
+    [background addSubview:pageControl];
+    [self.view addSubview:background];
     
 }
 
@@ -120,8 +127,9 @@
         {
             //网关登录
             GateWayLoginViewController *gateWayLogin=[[GateWayLoginViewController alloc]initWithNibName:nil bundle:nil];
-            //gateWayLogin.title=@"网关登录";
-            [self presentModalViewController:gateWayLogin animated:YES];
+            [self.navigationController pushViewController:gateWayLogin animated:YES];
+            self.navigationController.navigationBar.hidden=NO;
+            
         }
             break;
         case 8:
@@ -176,6 +184,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];//设置statusbar为黑底白字
+    self.navigationController.navigationBar.hidden= YES;
 }
 
 @end

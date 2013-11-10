@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.navigationItem.title=@"网关登录";
     }
     return self;
 }
@@ -28,13 +29,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    login=[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, SCREEN_HEIGHT)];
+	// Do any additional setup after loading the view
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];  //设置statusbar为白底黑字
+    
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
+    self.view.backgroundColor=[UIColor whiteColor];
+    login=[[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
     NSURL *url=[NSURL URLWithString:@"http://wg.suda.edu.cn"];
     [login loadRequest:[NSURLRequest requestWithURL:url]];
     [self.view addSubview:login];
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
