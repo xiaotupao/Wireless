@@ -33,6 +33,7 @@
 		04740F41181B90DC0057B109 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3A181B90DC0057B109 /* settings.png */; };
 		04740F42181B90DC0057B109 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3B181B90DC0057B109 /* weather.png */; };
 		04740F43181B90DC0057B109 /* gateway.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3C181B90DC0057B109 /* gateway.png */; };
+		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		75528387182D478F008C9C70 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 75528386182D478F008C9C70 /* login.png */; };
 		755E149118043D8D00C7925B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149018043D8D00C7925B /* Foundation.framework */; };
 		755E149318043D8D00C7925B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149218043D8D00C7925B /* CoreGraphics.framework */; };
@@ -104,6 +105,8 @@
 		04740F3A181B90DC0057B109 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		04740F3B181B90DC0057B109 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
 		04740F3C181B90DC0057B109 /* gateway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gateway.png; sourceTree = "<group>"; };
+		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
+		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		75528386182D478F008C9C70 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		755E148D18043D8D00C7925B /* wirelessuda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wirelessuda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755E149018043D8D00C7925B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -227,10 +230,10 @@
 		04BFC707181C847F00B1CF88 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7532E61D182F9FEC00498BB0 /* GateWay */,
 				041489CC182DCCA800BC5B0B /* GateWayLogin */,
 				04BFC708181C847F00B1CF88 /* AccountSettings */,
 				04BFC709181C847F00B1CF88 /* Card */,
-				04BFC70A181C847F00B1CF88 /* GateWay */,
 				04BFC70B181C847F00B1CF88 /* News */,
 				04BFC70C181C847F00B1CF88 /* ScheduledBus */,
 				04BFC70D181C847F00B1CF88 /* SchoolCalendar */,
@@ -251,13 +254,6 @@
 			children = (
 			);
 			path = Card;
-			sourceTree = "<group>";
-		};
-		04BFC70A181C847F00B1CF88 /* GateWay */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GateWay;
 			sourceTree = "<group>";
 		};
 		04BFC70B181C847F00B1CF88 /* News */ = {
@@ -286,6 +282,15 @@
 			children = (
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		7532E61D182F9FEC00498BB0 /* GateWay */ = {
+			isa = PBXGroup;
+			children = (
+				7532E61E182F9FEC00498BB0 /* GateWayViewController.h */,
+				7532E61F182F9FEC00498BB0 /* GateWayViewController.m */,
+			);
+			path = GateWay;
 			sourceTree = "<group>";
 		};
 		755E148418043D8D00C7925B = {
@@ -470,6 +475,7 @@
 				04740F23181B86710057B109 /* CustomButton.m in Sources */,
 				04740F1C181B85100057B109 /* UIImage+WebP.m in Sources */,
 				04740F18181B85100057B109 /* SDWebImagePrefetcher.m in Sources */,
+				7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */,
 				755E149D18043D8D00C7925B /* main.m in Sources */,
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
