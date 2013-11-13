@@ -33,7 +33,17 @@
 		04740F41181B90DC0057B109 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3A181B90DC0057B109 /* settings.png */; };
 		04740F42181B90DC0057B109 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3B181B90DC0057B109 /* weather.png */; };
 		04740F43181B90DC0057B109 /* gateway.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3C181B90DC0057B109 /* gateway.png */; };
+		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
+		7532E6D1183131A000498BB0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D0183131A000498BB0 /* 1.png */; };
+		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
+		7532E6E71831436900498BB0 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E21831436900498BB0 /* JWFolders.m */; };
+		7532E6E81831436900498BB0 /* UIScreen+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E41831436900498BB0 /* UIScreen+Scale.m */; };
+		7532E6E91831436900498BB0 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E61831436900498BB0 /* UIView+Screenshot.m */; };
+		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
+		7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */; };
+		7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6F218314E6F00498BB0 /* MBProgressHUD.m */; };
 		75528387182D478F008C9C70 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 75528386182D478F008C9C70 /* login.png */; };
+		755B69B218338930007DBEAE /* PasswordCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B69B118338930007DBEAE /* PasswordCellView.m */; };
 		755E149118043D8D00C7925B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149018043D8D00C7925B /* Foundation.framework */; };
 		755E149318043D8D00C7925B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149218043D8D00C7925B /* CoreGraphics.framework */; };
 		755E149518043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
@@ -104,7 +114,25 @@
 		04740F3A181B90DC0057B109 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		04740F3B181B90DC0057B109 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
 		04740F3C181B90DC0057B109 /* gateway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gateway.png; sourceTree = "<group>"; };
+		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
+		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
+		7532E6D0183131A000498BB0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		7532E6E11831436900498BB0 /* JWFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFolders.h; sourceTree = "<group>"; };
+		7532E6E21831436900498BB0 /* JWFolders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFolders.m; sourceTree = "<group>"; };
+		7532E6E31831436900498BB0 /* UIScreen+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Scale.h"; sourceTree = "<group>"; };
+		7532E6E41831436900498BB0 /* UIScreen+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Scale.m"; sourceTree = "<group>"; };
+		7532E6E51831436900498BB0 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		7532E6E61831436900498BB0 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		7532E6ED18314CBA00498BB0 /* BandingPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandingPhoneViewController.h; sourceTree = "<group>"; };
+		7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandingPhoneViewController.m; sourceTree = "<group>"; };
+		7532E6F118314E6F00498BB0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7532E6F218314E6F00498BB0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		75528386182D478F008C9C70 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		755B69B018338930007DBEAE /* PasswordCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordCellView.h; sourceTree = "<group>"; };
+		755B69B118338930007DBEAE /* PasswordCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordCellView.m; sourceTree = "<group>"; };
 		755E148D18043D8D00C7925B /* wirelessuda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wirelessuda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755E149018043D8D00C7925B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		755E149218043D8D00C7925B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +185,7 @@
 		04740EF1181B84F50057B109 /* Reference */ = {
 			isa = PBXGroup;
 			children = (
+				7532E6F018314E5800498BB0 /* MBProgressHUD */,
 				04740EF2181B85100057B109 /* SDWebImage */,
 			);
 			path = Reference;
@@ -227,10 +256,10 @@
 		04BFC707181C847F00B1CF88 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7532E61D182F9FEC00498BB0 /* GateWay */,
 				041489CC182DCCA800BC5B0B /* GateWayLogin */,
 				04BFC708181C847F00B1CF88 /* AccountSettings */,
 				04BFC709181C847F00B1CF88 /* Card */,
-				04BFC70A181C847F00B1CF88 /* GateWay */,
 				04BFC70B181C847F00B1CF88 /* News */,
 				04BFC70C181C847F00B1CF88 /* ScheduledBus */,
 				04BFC70D181C847F00B1CF88 /* SchoolCalendar */,
@@ -251,13 +280,6 @@
 			children = (
 			);
 			path = Card;
-			sourceTree = "<group>";
-		};
-		04BFC70A181C847F00B1CF88 /* GateWay */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GateWay;
 			sourceTree = "<group>";
 		};
 		04BFC70B181C847F00B1CF88 /* News */ = {
@@ -286,6 +308,60 @@
 			children = (
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		7532E61D182F9FEC00498BB0 /* GateWay */ = {
+			isa = PBXGroup;
+			children = (
+				7532E622182FC6F900498BB0 /* GateWayView */,
+				7532E621182FC6D100498BB0 /* GateWayViewController */,
+			);
+			path = GateWay;
+			sourceTree = "<group>";
+		};
+		7532E621182FC6D100498BB0 /* GateWayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7532E6E01831436900498BB0 /* JWFolders */,
+				7532E61E182F9FEC00498BB0 /* GateWayViewController.h */,
+				7532E61F182F9FEC00498BB0 /* GateWayViewController.m */,
+				7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */,
+				7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */,
+				7532E6ED18314CBA00498BB0 /* BandingPhoneViewController.h */,
+				7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */,
+			);
+			name = GateWayViewController;
+			sourceTree = "<group>";
+		};
+		7532E622182FC6F900498BB0 /* GateWayView */ = {
+			isa = PBXGroup;
+			children = (
+				755B69B018338930007DBEAE /* PasswordCellView.h */,
+				755B69B118338930007DBEAE /* PasswordCellView.m */,
+			);
+			name = GateWayView;
+			sourceTree = "<group>";
+		};
+		7532E6E01831436900498BB0 /* JWFolders */ = {
+			isa = PBXGroup;
+			children = (
+				7532E6E11831436900498BB0 /* JWFolders.h */,
+				7532E6E21831436900498BB0 /* JWFolders.m */,
+				7532E6E31831436900498BB0 /* UIScreen+Scale.h */,
+				7532E6E41831436900498BB0 /* UIScreen+Scale.m */,
+				7532E6E51831436900498BB0 /* UIView+Screenshot.h */,
+				7532E6E61831436900498BB0 /* UIView+Screenshot.m */,
+			);
+			path = JWFolders;
+			sourceTree = "<group>";
+		};
+		7532E6F018314E5800498BB0 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7532E6F118314E6F00498BB0 /* MBProgressHUD.h */,
+				7532E6F218314E6F00498BB0 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		755E148418043D8D00C7925B = {
@@ -330,6 +406,8 @@
 				04740F27181B86870057B109 /* WLSudaMainViewController.h */,
 				04740F28181B86870057B109 /* WLSudaMainViewController.m */,
 				755E14A218043D8D00C7925B /* Images.xcassets */,
+				7532E6D41831379A00498BB0 /* 2.png */,
+				7532E6D0183131A000498BB0 /* 1.png */,
 				755E149718043D8D00C7925B /* Supporting Files */,
 			);
 			path = wirelessuda;
@@ -439,11 +517,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7532E6D1183131A000498BB0 /* 1.png in Resources */,
 				04740F3D181B90DC0057B109 /* bus.png in Resources */,
 				75528387182D478F008C9C70 /* login.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,
+				7532E6D51831379A00498BB0 /* 2.png in Resources */,
 				04740F40181B90DC0057B109 /* news.png in Resources */,
 				04740F42181B90DC0057B109 /* weather.png in Resources */,
 				755E14A318043D8D00C7925B /* Images.xcassets in Resources */,
@@ -470,18 +550,26 @@
 				04740F23181B86710057B109 /* CustomButton.m in Sources */,
 				04740F1C181B85100057B109 /* UIImage+WebP.m in Sources */,
 				04740F18181B85100057B109 /* SDWebImagePrefetcher.m in Sources */,
+				7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */,
+				7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */,
 				755E149D18043D8D00C7925B /* main.m in Sources */,
+				7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */,
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
+				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
 				04740F17181B85100057B109 /* SDWebImageManager.m in Sources */,
+				755B69B218338930007DBEAE /* PasswordCellView.m in Sources */,
 				04740F19181B85100057B109 /* UIButton+WebCache.m in Sources */,
 				04740F1B181B85100057B109 /* UIImage+MultiFormat.m in Sources */,
 				04740F24181B86710057B109 /* mainViewScrollView.m in Sources */,
 				04740F1D181B85100057B109 /* UIImageView+WebCache.m in Sources */,
 				04740F16181B85100057B109 /* SDWebImageDownloaderOperation.m in Sources */,
 				04740F1A181B85100057B109 /* UIImage+GIF.m in Sources */,
+				7532E6E91831436900498BB0 /* UIView+Screenshot.m in Sources */,
+				7532E6E71831436900498BB0 /* JWFolders.m in Sources */,
 				041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */,
 				04740F13181B85100057B109 /* SDWebImageCompat.m in Sources */,
+				7532E6E81831436900498BB0 /* UIScreen+Scale.m in Sources */,
 				04740F11181B85100057B109 /* NSData+GIF.m in Sources */,
 				04740F10181B85100057B109 /* MKAnnotationView+WebCache.m in Sources */,
 				04740F12181B85100057B109 /* SDImageCache.m in Sources */,

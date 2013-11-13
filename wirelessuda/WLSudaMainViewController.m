@@ -8,6 +8,7 @@
 
 #import "WLSudaMainViewController.h"
 #import "GateWayLoginViewController.h"
+#import "GateWayViewController.h"
 
 @interface WLSudaMainViewController ()
 
@@ -96,6 +97,9 @@
         case 1:
         {
             //网关应用
+            GateWayViewController *gateWay = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:gateWay animated:YES];
+            self.navigationController.navigationBar.hidden=NO;
         }
             break;
         case 2:
