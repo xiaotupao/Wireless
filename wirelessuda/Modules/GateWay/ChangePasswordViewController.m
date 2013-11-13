@@ -8,12 +8,16 @@
 
 #import "ChangePasswordViewController.h"
 #import "MBProgressHUD.h"
+#import "PasswordCellView.h"
 
 @interface ChangePasswordViewController ()
 
 @end
 
 @implementation ChangePasswordViewController
+
+@synthesize passwordArray;
+@synthesize placeholderArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,45 +35,56 @@
     
 	// Do any additional setup after loading the view.
     self.edgesForExtendedLayout=UIRectEdgeNone;
+    
+#pragma mark - 模块
+    passwordArray = [NSMutableArray arrayWithObjects:@"原密码", @"新密码", @"确认密码", nil];
+    placeholderArray = [NSMutableArray arrayWithObjects:@"请输入原密码", @"请输入新密码", @"请确认新密码", nil];
+    
+    for (int i = 0; i<[passwordArray count]; i++) {
+        PasswordCellView *cell = [[PasswordCellView alloc]initWithFrame:CGRectMake(20, self.view.bounds.size.height - 170 + i*45, 280, 30)];
+        cell.passName.text = [passwordArray objectAtIndex:i];
+        cell.passText.tag = i;
+        [self.view addSubview:cell];
+    }
 	
-#pragma mark - 原密码
-    UILabel *beformPsdLabel = [[UILabel alloc]init];
-    beformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-170, 80, 30);
-    beformPsdLabel.text = @"原密码:";
-    [self.view addSubview:beformPsdLabel];
-    beformPsdText = [[UITextField alloc]init];
-    beformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-170, 180 ,30);
-    beformPsdText.borderStyle = UITextBorderStyleRoundedRect;
-    beformPsdText.placeholder = @"请输入原密码";
-    beformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-    beformPsdText.secureTextEntry = YES;
-    [self.view addSubview:beformPsdText];
-    
-#pragma mark - 新密码
-    UILabel *newPsdLabel = [[UILabel alloc]init];
-    newPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-125, 80, 30);
-    newPsdLabel.text = @"新密码:";
-    [self.view addSubview:newPsdLabel];
-    newPsdText = [[UITextField alloc]init];
-    newPsdText.frame = CGRectMake(100, self.view.bounds.size.height-125, 180, 30);
-    newPsdText.borderStyle = UITextBorderStyleRoundedRect;
-    newPsdText.placeholder = @"请输入新密码";
-    newPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-    newPsdText.secureTextEntry = YES;
-    [self.view addSubview:newPsdText];
-    
-#pragma mark - 确认密码
-    UILabel *conformPsdLabel = [[UILabel alloc]init];
-    conformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-80, 80, 30);
-    conformPsdLabel.text = @"确认密码:";
-    [self.view addSubview:conformPsdLabel];
-    conformPsdText = [[UITextField alloc]init];
-    conformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-80, 180, 30);
-    conformPsdText.borderStyle = UITextBorderStyleRoundedRect;
-    conformPsdText.placeholder = @"请确认新密码";
-    conformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-    conformPsdText.secureTextEntry = YES;
-    [self.view addSubview:conformPsdText];
+//#pragma mark - 原密码
+//    UILabel *beformPsdLabel = [[UILabel alloc]init];
+//    beformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-170, 80, 30);
+//    beformPsdLabel.text = @"原密码:";
+//    [self.view addSubview:beformPsdLabel];
+//    beformPsdText = [[UITextField alloc]init];
+//    beformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-170, 180 ,30);
+//    beformPsdText.borderStyle = UITextBorderStyleRoundedRect;
+//    beformPsdText.placeholder = @"请输入原密码";
+//    beformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
+//    beformPsdText.secureTextEntry = YES;
+//    [self.view addSubview:beformPsdText];
+//    
+//#pragma mark - 新密码
+//    UILabel *newPsdLabel = [[UILabel alloc]init];
+//    newPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-125, 80, 30);
+//    newPsdLabel.text = @"新密码:";
+//    [self.view addSubview:newPsdLabel];
+//    newPsdText = [[UITextField alloc]init];
+//    newPsdText.frame = CGRectMake(100, self.view.bounds.size.height-125, 180, 30);
+//    newPsdText.borderStyle = UITextBorderStyleRoundedRect;
+//    newPsdText.placeholder = @"请输入新密码";
+//    newPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
+//    newPsdText.secureTextEntry = YES;
+//    [self.view addSubview:newPsdText];
+//    
+//#pragma mark - 确认密码
+//    UILabel *conformPsdLabel = [[UILabel alloc]init];
+//    conformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-80, 80, 30);
+//    conformPsdLabel.text = @"确认密码:";
+//    [self.view addSubview:conformPsdLabel];
+//    conformPsdText = [[UITextField alloc]init];
+//    conformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-80, 180, 30);
+//    conformPsdText.borderStyle = UITextBorderStyleRoundedRect;
+//    conformPsdText.placeholder = @"请确认新密码";
+//    conformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
+//    conformPsdText.secureTextEntry = YES;
+//    [self.view addSubview:conformPsdText];
     
 #pragma mark - 确认按钮
     UIButton *confirm = [UIButton buttonWithType:UIButtonTypeRoundedRect];

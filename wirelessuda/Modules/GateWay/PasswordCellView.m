@@ -24,7 +24,7 @@
         passName.textAlignment = NSTextAlignmentCenter;
         passName.backgroundColor = [UIColor clearColor];
 #pragma mark - passText
-        passText = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 180, 30)];
+        passText = [[UITextField alloc]initWithFrame:CGRectMake(80, 0, 180, 30)];
         passText.borderStyle = UITextBorderStyleRoundedRect;
         passText.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         passText.secureTextEntry = YES;

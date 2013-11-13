@@ -15,4 +15,7 @@
     UITextField *conformPsdText;
 }
 
+@property (nonatomic, strong)NSMutableArray *passwordArray;
+@property (nonatomic, strong)NSMutableArray *placeholderArray;
+
 @end
