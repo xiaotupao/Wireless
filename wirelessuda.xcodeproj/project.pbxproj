@@ -11,7 +11,6 @@
 		0415644D18339B5A00892EF1 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644818339B5A00892EF1 /* JWFolders.m */; };
 		0415644E18339B5A00892EF1 /* UIScreen+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644A18339B5A00892EF1 /* UIScreen+Scale.m */; };
 		0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644C18339B5A00892EF1 /* UIView+Screenshot.m */; };
-		041564541833A9CC00892EF1 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564531833A9CC00892EF1 /* UserEntity.m */; };
 		041564571833ACD300892EF1 /* GateWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564561833ACD300892EF1 /* GateWayModel.m */; };
 		041564731833AD0700892EF1 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415645A1833AD0700892EF1 /* ASIAuthenticationDialog.m */; };
 		041564741833AD0700892EF1 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415645D1833AD0700892EF1 /* ASIDataCompressor.m */; };
@@ -101,8 +100,6 @@
 		0415644A18339B5A00892EF1 /* UIScreen+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Scale.m"; sourceTree = "<group>"; };
 		0415644B18339B5A00892EF1 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
 		0415644C18339B5A00892EF1 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
-		041564521833A9CC00892EF1 /* UserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
-		041564531833A9CC00892EF1 /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
 		041564551833ACD300892EF1 /* GateWayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayModel.h; sourceTree = "<group>"; };
 		041564561833ACD300892EF1 /* GateWayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayModel.m; sourceTree = "<group>"; };
 		041564591833AD0700892EF1 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -286,8 +283,6 @@
 		041564511833A99100892EF1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				041564521833A9CC00892EF1 /* UserEntity.h */,
-				041564531833A9CC00892EF1 /* UserEntity.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -732,7 +727,6 @@
 				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
 				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
 				041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */,
-				041564541833A9CC00892EF1 /* UserEntity.m in Sources */,
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
 				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
 				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
