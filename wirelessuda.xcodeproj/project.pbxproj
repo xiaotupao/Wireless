@@ -8,6 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041489CE182DD26C00BC5B0B /* GateWayLoginViewController.m */; };
+		0415644D18339B5A00892EF1 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644818339B5A00892EF1 /* JWFolders.m */; };
+		0415644E18339B5A00892EF1 /* UIScreen+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644A18339B5A00892EF1 /* UIScreen+Scale.m */; };
+		0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644C18339B5A00892EF1 /* UIView+Screenshot.m */; };
+		041564541833A9CC00892EF1 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564531833A9CC00892EF1 /* UserEntity.m */; };
+		041564571833ACD300892EF1 /* GateWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564561833ACD300892EF1 /* GateWayModel.m */; };
+		041564731833AD0700892EF1 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415645A1833AD0700892EF1 /* ASIAuthenticationDialog.m */; };
+		041564741833AD0700892EF1 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415645D1833AD0700892EF1 /* ASIDataCompressor.m */; };
+		041564751833AD0700892EF1 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415645F1833AD0700892EF1 /* ASIDataDecompressor.m */; };
+		041564761833AD0700892EF1 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564611833AD0700892EF1 /* ASIDownloadCache.m */; };
+		041564771833AD0700892EF1 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564631833AD0700892EF1 /* ASIFormDataRequest.m */; };
+		041564781833AD0700892EF1 /* ASIHTTPRequest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041564641833AD0700892EF1 /* ASIHTTPRequest-Info.plist */; };
+		041564791833AD0700892EF1 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564671833AD0700892EF1 /* ASIHTTPRequest.m */; };
+		0415647A1833AD0700892EF1 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415646B1833AD0700892EF1 /* ASIInputStream.m */; };
+		0415647B1833AD0700892EF1 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415646D1833AD0700892EF1 /* ASINetworkQueue.m */; };
+		0415647C1833AD0700892EF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0415646F1833AD0700892EF1 /* InfoPlist.strings */; };
+		0415647D1833AD0700892EF1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564721833AD0700892EF1 /* Reachability.m */; };
+		041564B81833B93F00892EF1 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564A01833B93E00892EF1 /* NSObject+SBJson.m */; };
+		041564B91833B93F00892EF1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564A31833B93E00892EF1 /* SBJsonParser.m */; };
+		041564BA1833B93F00892EF1 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564A51833B93E00892EF1 /* SBJsonStreamParser.m */; };
+		041564BB1833B93F00892EF1 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564A71833B93F00892EF1 /* SBJsonStreamParserAccumulator.m */; };
+		041564BC1833B93F00892EF1 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564A91833B93F00892EF1 /* SBJsonStreamParserAdapter.m */; };
+		041564BD1833B93F00892EF1 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564AB1833B93F00892EF1 /* SBJsonStreamParserState.m */; };
+		041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564AD1833B93F00892EF1 /* SBJsonStreamWriter.m */; };
+		041564BF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564AF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m */; };
+		041564C01833B93F00892EF1 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564B11833B93F00892EF1 /* SBJsonStreamWriterState.m */; };
+		041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564B31833B93F00892EF1 /* SBJsonTokeniser.m */; };
+		041564C21833B93F00892EF1 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564B51833B93F00892EF1 /* SBJsonUTF8Stream.m */; };
+		041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041564B71833B93F00892EF1 /* SBJsonWriter.m */; };
 		04740F10181B85100057B109 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740EF4181B85100057B109 /* MKAnnotationView+WebCache.m */; };
 		04740F11181B85100057B109 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740EF6181B85100057B109 /* NSData+GIF.m */; };
 		04740F12181B85100057B109 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04740EF8181B85100057B109 /* SDImageCache.m */; };
@@ -36,9 +64,6 @@
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D1183131A000498BB0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D0183131A000498BB0 /* 1.png */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
-		7532E6E71831436900498BB0 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E21831436900498BB0 /* JWFolders.m */; };
-		7532E6E81831436900498BB0 /* UIScreen+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E41831436900498BB0 /* UIScreen+Scale.m */; };
-		7532E6E91831436900498BB0 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6E61831436900498BB0 /* UIView+Screenshot.m */; };
 		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
 		7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */; };
 		7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6F218314E6F00498BB0 /* MBProgressHUD.m */; };
@@ -70,6 +95,66 @@
 /* Begin PBXFileReference section */
 		041489CD182DD26C00BC5B0B /* GateWayLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayLoginViewController.h; sourceTree = "<group>"; };
 		041489CE182DD26C00BC5B0B /* GateWayLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayLoginViewController.m; sourceTree = "<group>"; };
+		0415644718339B5A00892EF1 /* JWFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFolders.h; sourceTree = "<group>"; };
+		0415644818339B5A00892EF1 /* JWFolders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFolders.m; sourceTree = "<group>"; };
+		0415644918339B5A00892EF1 /* UIScreen+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Scale.h"; sourceTree = "<group>"; };
+		0415644A18339B5A00892EF1 /* UIScreen+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Scale.m"; sourceTree = "<group>"; };
+		0415644B18339B5A00892EF1 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		0415644C18339B5A00892EF1 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		041564521833A9CC00892EF1 /* UserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEntity.h; sourceTree = "<group>"; };
+		041564531833A9CC00892EF1 /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
+		041564551833ACD300892EF1 /* GateWayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayModel.h; sourceTree = "<group>"; };
+		041564561833ACD300892EF1 /* GateWayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayModel.m; sourceTree = "<group>"; };
+		041564591833AD0700892EF1 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		0415645A1833AD0700892EF1 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		0415645B1833AD0700892EF1 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		0415645C1833AD0700892EF1 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		0415645D1833AD0700892EF1 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		0415645E1833AD0700892EF1 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		0415645F1833AD0700892EF1 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		041564601833AD0700892EF1 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		041564611833AD0700892EF1 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		041564621833AD0700892EF1 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		041564631833AD0700892EF1 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		041564641833AD0700892EF1 /* ASIHTTPRequest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASIHTTPRequest-Info.plist"; sourceTree = "<group>"; };
+		041564651833AD0700892EF1 /* ASIHTTPRequest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest-Prefix.pch"; sourceTree = "<group>"; };
+		041564661833AD0700892EF1 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		041564671833AD0700892EF1 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		041564681833AD0700892EF1 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		041564691833AD0700892EF1 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		0415646A1833AD0700892EF1 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		0415646B1833AD0700892EF1 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		0415646C1833AD0700892EF1 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		0415646D1833AD0700892EF1 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		0415646E1833AD0700892EF1 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		041564701833AD0700892EF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041564711833AD0700892EF1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		041564721833AD0700892EF1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0415649F1833B93E00892EF1 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		041564A01833B93E00892EF1 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		041564A11833B93E00892EF1 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		041564A21833B93E00892EF1 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		041564A31833B93E00892EF1 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		041564A41833B93E00892EF1 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		041564A51833B93E00892EF1 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		041564A61833B93F00892EF1 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		041564A71833B93F00892EF1 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		041564A81833B93F00892EF1 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		041564A91833B93F00892EF1 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		041564AA1833B93F00892EF1 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		041564AB1833B93F00892EF1 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		041564AC1833B93F00892EF1 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		041564AD1833B93F00892EF1 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		041564AE1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		041564AF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		041564B01833B93F00892EF1 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		041564B11833B93F00892EF1 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		041564B21833B93F00892EF1 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		041564B31833B93F00892EF1 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		041564B41833B93F00892EF1 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		041564B51833B93F00892EF1 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		041564B61833B93F00892EF1 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		041564B71833B93F00892EF1 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		04740EF3181B85100057B109 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		04740EF4181B85100057B109 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		04740EF5181B85100057B109 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GIF.h"; sourceTree = "<group>"; };
@@ -118,12 +203,6 @@
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D0183131A000498BB0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		7532E6E11831436900498BB0 /* JWFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFolders.h; sourceTree = "<group>"; };
-		7532E6E21831436900498BB0 /* JWFolders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWFolders.m; sourceTree = "<group>"; };
-		7532E6E31831436900498BB0 /* UIScreen+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Scale.h"; sourceTree = "<group>"; };
-		7532E6E41831436900498BB0 /* UIScreen+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Scale.m"; sourceTree = "<group>"; };
-		7532E6E51831436900498BB0 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
-		7532E6E61831436900498BB0 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		7532E6ED18314CBA00498BB0 /* BandingPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandingPhoneViewController.h; sourceTree = "<group>"; };
@@ -182,9 +261,107 @@
 			path = GateWayLogin;
 			sourceTree = "<group>";
 		};
+		0415644518339AB300892EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				041564551833ACD300892EF1 /* GateWayModel.h */,
+				041564561833ACD300892EF1 /* GateWayModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0415644618339B5A00892EF1 /* JWFolders */ = {
+			isa = PBXGroup;
+			children = (
+				0415644718339B5A00892EF1 /* JWFolders.h */,
+				0415644818339B5A00892EF1 /* JWFolders.m */,
+				0415644918339B5A00892EF1 /* UIScreen+Scale.h */,
+				0415644A18339B5A00892EF1 /* UIScreen+Scale.m */,
+				0415644B18339B5A00892EF1 /* UIView+Screenshot.h */,
+				0415644C18339B5A00892EF1 /* UIView+Screenshot.m */,
+			);
+			path = JWFolders;
+			sourceTree = "<group>";
+		};
+		041564511833A99100892EF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				041564521833A9CC00892EF1 /* UserEntity.h */,
+				041564531833A9CC00892EF1 /* UserEntity.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		041564581833AD0700892EF1 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				041564591833AD0700892EF1 /* ASIAuthenticationDialog.h */,
+				0415645A1833AD0700892EF1 /* ASIAuthenticationDialog.m */,
+				0415645B1833AD0700892EF1 /* ASICacheDelegate.h */,
+				0415645C1833AD0700892EF1 /* ASIDataCompressor.h */,
+				0415645D1833AD0700892EF1 /* ASIDataCompressor.m */,
+				0415645E1833AD0700892EF1 /* ASIDataDecompressor.h */,
+				0415645F1833AD0700892EF1 /* ASIDataDecompressor.m */,
+				041564601833AD0700892EF1 /* ASIDownloadCache.h */,
+				041564611833AD0700892EF1 /* ASIDownloadCache.m */,
+				041564621833AD0700892EF1 /* ASIFormDataRequest.h */,
+				041564631833AD0700892EF1 /* ASIFormDataRequest.m */,
+				041564641833AD0700892EF1 /* ASIHTTPRequest-Info.plist */,
+				041564651833AD0700892EF1 /* ASIHTTPRequest-Prefix.pch */,
+				041564661833AD0700892EF1 /* ASIHTTPRequest.h */,
+				041564671833AD0700892EF1 /* ASIHTTPRequest.m */,
+				041564681833AD0700892EF1 /* ASIHTTPRequestConfig.h */,
+				041564691833AD0700892EF1 /* ASIHTTPRequestDelegate.h */,
+				0415646A1833AD0700892EF1 /* ASIInputStream.h */,
+				0415646B1833AD0700892EF1 /* ASIInputStream.m */,
+				0415646C1833AD0700892EF1 /* ASINetworkQueue.h */,
+				0415646D1833AD0700892EF1 /* ASINetworkQueue.m */,
+				0415646E1833AD0700892EF1 /* ASIProgressDelegate.h */,
+				0415646F1833AD0700892EF1 /* InfoPlist.strings */,
+				041564711833AD0700892EF1 /* Reachability.h */,
+				041564721833AD0700892EF1 /* Reachability.m */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		0415649E1833B93E00892EF1 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				0415649F1833B93E00892EF1 /* NSObject+SBJson.h */,
+				041564A01833B93E00892EF1 /* NSObject+SBJson.m */,
+				041564A11833B93E00892EF1 /* SBJson.h */,
+				041564A21833B93E00892EF1 /* SBJsonParser.h */,
+				041564A31833B93E00892EF1 /* SBJsonParser.m */,
+				041564A41833B93E00892EF1 /* SBJsonStreamParser.h */,
+				041564A51833B93E00892EF1 /* SBJsonStreamParser.m */,
+				041564A61833B93F00892EF1 /* SBJsonStreamParserAccumulator.h */,
+				041564A71833B93F00892EF1 /* SBJsonStreamParserAccumulator.m */,
+				041564A81833B93F00892EF1 /* SBJsonStreamParserAdapter.h */,
+				041564A91833B93F00892EF1 /* SBJsonStreamParserAdapter.m */,
+				041564AA1833B93F00892EF1 /* SBJsonStreamParserState.h */,
+				041564AB1833B93F00892EF1 /* SBJsonStreamParserState.m */,
+				041564AC1833B93F00892EF1 /* SBJsonStreamWriter.h */,
+				041564AD1833B93F00892EF1 /* SBJsonStreamWriter.m */,
+				041564AE1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.h */,
+				041564AF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m */,
+				041564B01833B93F00892EF1 /* SBJsonStreamWriterState.h */,
+				041564B11833B93F00892EF1 /* SBJsonStreamWriterState.m */,
+				041564B21833B93F00892EF1 /* SBJsonTokeniser.h */,
+				041564B31833B93F00892EF1 /* SBJsonTokeniser.m */,
+				041564B41833B93F00892EF1 /* SBJsonUTF8Stream.h */,
+				041564B51833B93F00892EF1 /* SBJsonUTF8Stream.m */,
+				041564B61833B93F00892EF1 /* SBJsonWriter.h */,
+				041564B71833B93F00892EF1 /* SBJsonWriter.m */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
 		04740EF1181B84F50057B109 /* Reference */ = {
 			isa = PBXGroup;
 			children = (
+				0415649E1833B93E00892EF1 /* Json */,
+				041564581833AD0700892EF1 /* ASIHTTPRequest */,
+				0415644618339B5A00892EF1 /* JWFolders */,
 				7532E6F018314E5800498BB0 /* MBProgressHUD */,
 				04740EF2181B85100057B109 /* SDWebImage */,
 			);
@@ -313,6 +490,7 @@
 		7532E61D182F9FEC00498BB0 /* GateWay */ = {
 			isa = PBXGroup;
 			children = (
+				0415644518339AB300892EF1 /* Model */,
 				7532E622182FC6F900498BB0 /* GateWayView */,
 				7532E621182FC6D100498BB0 /* GateWayViewController */,
 			);
@@ -322,7 +500,6 @@
 		7532E621182FC6D100498BB0 /* GateWayViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7532E6E01831436900498BB0 /* JWFolders */,
 				7532E61E182F9FEC00498BB0 /* GateWayViewController.h */,
 				7532E61F182F9FEC00498BB0 /* GateWayViewController.m */,
 				7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */,
@@ -340,19 +517,6 @@
 				755B69B118338930007DBEAE /* PasswordCellView.m */,
 			);
 			name = GateWayView;
-			sourceTree = "<group>";
-		};
-		7532E6E01831436900498BB0 /* JWFolders */ = {
-			isa = PBXGroup;
-			children = (
-				7532E6E11831436900498BB0 /* JWFolders.h */,
-				7532E6E21831436900498BB0 /* JWFolders.m */,
-				7532E6E31831436900498BB0 /* UIScreen+Scale.h */,
-				7532E6E41831436900498BB0 /* UIScreen+Scale.m */,
-				7532E6E51831436900498BB0 /* UIView+Screenshot.h */,
-				7532E6E61831436900498BB0 /* UIView+Screenshot.m */,
-			);
-			path = JWFolders;
 			sourceTree = "<group>";
 		};
 		7532E6F018314E5800498BB0 /* MBProgressHUD */ = {
@@ -398,6 +562,7 @@
 		755E149618043D8D00C7925B /* wirelessuda */ = {
 			isa = PBXGroup;
 			children = (
+				041564511833A99100892EF1 /* Common */,
 				04BFC707181C847F00B1CF88 /* Modules */,
 				04740F35181B90990057B109 /* Images */,
 				04740F1E181B86710057B109 /* CustomView */,
@@ -518,6 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7532E6D1183131A000498BB0 /* 1.png in Resources */,
+				0415647C1833AD0700892EF1 /* InfoPlist.strings in Resources */,
 				04740F3D181B90DC0057B109 /* bus.png in Resources */,
 				75528387182D478F008C9C70 /* login.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
@@ -529,6 +695,7 @@
 				755E14A318043D8D00C7925B /* Images.xcassets in Resources */,
 				04740F3E181B90DC0057B109 /* calendar.png in Resources */,
 				04740F3F181B90DC0057B109 /* card.png in Resources */,
+				041564781833AD0700892EF1 /* ASIHTTPRequest-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,34 +714,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041564771833AD0700892EF1 /* ASIFormDataRequest.m in Sources */,
+				041564761833AD0700892EF1 /* ASIDownloadCache.m in Sources */,
 				04740F23181B86710057B109 /* CustomButton.m in Sources */,
 				04740F1C181B85100057B109 /* UIImage+WebP.m in Sources */,
+				0415647B1833AD0700892EF1 /* ASINetworkQueue.m in Sources */,
 				04740F18181B85100057B109 /* SDWebImagePrefetcher.m in Sources */,
 				7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */,
+				041564571833ACD300892EF1 /* GateWayModel.m in Sources */,
 				7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */,
+				041564BF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				755E149D18043D8D00C7925B /* main.m in Sources */,
 				7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */,
+				041564751833AD0700892EF1 /* ASIDataDecompressor.m in Sources */,
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
+				0415647D1833AD0700892EF1 /* Reachability.m in Sources */,
+				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
+				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
+				041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */,
+				041564541833A9CC00892EF1 /* UserEntity.m in Sources */,
+				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
+				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
 				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
+				041564BC1833B93F00892EF1 /* SBJsonStreamParserAdapter.m in Sources */,
+				041564C21833B93F00892EF1 /* SBJsonUTF8Stream.m in Sources */,
+				0415644E18339B5A00892EF1 /* UIScreen+Scale.m in Sources */,
+				041564731833AD0700892EF1 /* ASIAuthenticationDialog.m in Sources */,
 				04740F17181B85100057B109 /* SDWebImageManager.m in Sources */,
 				755B69B218338930007DBEAE /* PasswordCellView.m in Sources */,
+				041564741833AD0700892EF1 /* ASIDataCompressor.m in Sources */,
 				04740F19181B85100057B109 /* UIButton+WebCache.m in Sources */,
 				04740F1B181B85100057B109 /* UIImage+MultiFormat.m in Sources */,
 				04740F24181B86710057B109 /* mainViewScrollView.m in Sources */,
 				04740F1D181B85100057B109 /* UIImageView+WebCache.m in Sources */,
 				04740F16181B85100057B109 /* SDWebImageDownloaderOperation.m in Sources */,
+				041564B91833B93F00892EF1 /* SBJsonParser.m in Sources */,
 				04740F1A181B85100057B109 /* UIImage+GIF.m in Sources */,
-				7532E6E91831436900498BB0 /* UIView+Screenshot.m in Sources */,
-				7532E6E71831436900498BB0 /* JWFolders.m in Sources */,
+				0415647A1833AD0700892EF1 /* ASIInputStream.m in Sources */,
+				041564BD1833B93F00892EF1 /* SBJsonStreamParserState.m in Sources */,
 				041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */,
+				041564791833AD0700892EF1 /* ASIHTTPRequest.m in Sources */,
 				04740F13181B85100057B109 /* SDWebImageCompat.m in Sources */,
-				7532E6E81831436900498BB0 /* UIScreen+Scale.m in Sources */,
 				04740F11181B85100057B109 /* NSData+GIF.m in Sources */,
 				04740F10181B85100057B109 /* MKAnnotationView+WebCache.m in Sources */,
 				04740F12181B85100057B109 /* SDImageCache.m in Sources */,
 				04740F29181B86870057B109 /* WirelessudaAppDelegate.m in Sources */,
+				041564BA1833B93F00892EF1 /* SBJsonStreamParser.m in Sources */,
+				041564B81833B93F00892EF1 /* NSObject+SBJson.m in Sources */,
+				041564C01833B93F00892EF1 /* SBJsonStreamWriterState.m in Sources */,
 				04740F2A181B86870057B109 /* WLSudaMainViewController.m in Sources */,
+				041564BB1833B93F00892EF1 /* SBJsonStreamParserAccumulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +787,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0415646F1833AD0700892EF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041564701833AD0700892EF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		755E149918043D8D00C7925B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

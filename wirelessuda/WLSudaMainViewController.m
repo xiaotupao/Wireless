@@ -25,7 +25,7 @@
     if (self) {
         // Custom initialization
         self.navigationItem.title=@"首页";
-        self.view.backgroundColor=[UIColor blackColor];
+        self.view.backgroundColor=[UIColor clearColor];
     }
     return self;
 }
@@ -193,7 +193,7 @@
 {
     
     [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];//设置statusbar为黑底白字
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.navigationController.navigationBar.hidden= YES;
 }
 
