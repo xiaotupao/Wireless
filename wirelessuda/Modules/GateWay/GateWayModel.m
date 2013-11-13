@@ -8,6 +8,7 @@
 
 #import "GateWayModel.h"
 #import "SBJson.h"
+#import "ASIFormDataRequest.h"
 
 @implementation GateWayModel
 
@@ -30,14 +31,21 @@
     return gateWayModel;
 }
 #pragma mark－ request入口
--(void)startLogin:(UserEntity *)userEntity
+- (void) startLogin:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 {
-    NSString *loginUrl=[NSString stringWithFormat:@"http://jsglxt.suda.edu.cn/api_login.action?username=%@&password=%@",userEntity.username,userEntity.password];
-    NSURL *url=[NSURL URLWithString:loginUrl];
-    ASIHTTPRequest *request=[ASIHTTPRequest requestWithURL:url];
-    request.delegate=self;
-    request.tag=Login;
-    [netWorkQueue addOperation:request];
+    if ([tag isEqualToString:@"login"]) {
+        NSString *urlString = [NSString stringWithFormat:url,nil];
+        ASIFormDataRequest *requestForm = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
+        [requestForm setPostValue:param1 forKey:@"username"];
+        [requestForm setPostValue:param2 forKey:@"password"];
+        requestForm.delegate=self;
+        requestForm.tag=Login;
+        [netWorkQueue addOperation:requestForm];
+    }
+    else if ([tag isEqualToString:@"changePassword"]){
+        
+    }
+
 }
 
 #pragma mark－requestFinish回调函数
@@ -45,8 +53,25 @@
 {
     NSString *responseString=request.responseString;
     if (request.tag==Login) {
-        NSMutableArray *result=[responseString JSONValue];
+        NSDictionary *result=[responseString JSONValue];
+        NSString *status=[result objectForKey:@"status"];
+        [delegate getLoginResult:status];
+    }
+    else if (request.tag==ChangePassWord ){
+        
     }
 }
-
+//-(void)Demo
+//{
+//    GateWayModel *gateWayModel=[GateWayModel shareInstance];
+//    [gateWayModel startLogin:Login withUrl:url withParam1:username withParam2:password withParam3:Nil withParam4:nil];
+//    gateWayModel.delegate=self;
+//}
+//
+//-(void)getLoginResult:(NSString *)status
+//{
+//
+//}
 @end
+
+

@@ -14,7 +14,6 @@ typedef enum {
 #import <Foundation/Foundation.h>
 #import "ASIHTTPRequest.h"
 #import "ASINetworkQueue.h"
-#import "UserEntity.h"
 
 @protocol GateWayDelegtate;
 
@@ -24,12 +23,14 @@ typedef enum {
 @property (nonatomic,retain) ASINetworkQueue *netWorkQueue;
 
 + (GateWayModel *)shareInstance;
-- (void) startLogin:(UserEntity *)userEntity;
+- (void) startLogin:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 
 @end
 @protocol GateWayDelegtate <NSObject>
 
 @optional
--(void)getLoginResult:(NSString *)result;
+-(void)getLoginResult:(NSString *)status;
 
 @end
+
+
