@@ -69,6 +69,7 @@
 		7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6F218314E6F00498BB0 /* MBProgressHUD.m */; };
 		75528387182D478F008C9C70 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 75528386182D478F008C9C70 /* login.png */; };
 		755B69B218338930007DBEAE /* PasswordCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B69B118338930007DBEAE /* PasswordCellView.m */; };
+		755B69B51833BBA3007DBEAE /* PasswordData.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B69B41833BBA3007DBEAE /* PasswordData.m */; };
 		755E149118043D8D00C7925B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149018043D8D00C7925B /* Foundation.framework */; };
 		755E149318043D8D00C7925B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149218043D8D00C7925B /* CoreGraphics.framework */; };
 		755E149518043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
@@ -212,6 +213,8 @@
 		75528386182D478F008C9C70 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		755B69B018338930007DBEAE /* PasswordCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordCellView.h; sourceTree = "<group>"; };
 		755B69B118338930007DBEAE /* PasswordCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordCellView.m; sourceTree = "<group>"; };
+		755B69B31833BBA3007DBEAE /* PasswordData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordData.h; sourceTree = "<group>"; };
+		755B69B41833BBA3007DBEAE /* PasswordData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordData.m; sourceTree = "<group>"; };
 		755E148D18043D8D00C7925B /* wirelessuda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wirelessuda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755E149018043D8D00C7925B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		755E149218043D8D00C7925B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -266,6 +269,8 @@
 			children = (
 				041564551833ACD300892EF1 /* GateWayModel.h */,
 				041564561833ACD300892EF1 /* GateWayModel.m */,
+				755B69B31833BBA3007DBEAE /* PasswordData.h */,
+				755B69B41833BBA3007DBEAE /* PasswordData.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -736,6 +741,7 @@
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
 				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
 				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
+				755B69B51833BBA3007DBEAE /* PasswordData.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
 				041564BC1833B93F00892EF1 /* SBJsonStreamParserAdapter.m in Sources */,
 				041564C21833B93F00892EF1 /* SBJsonUTF8Stream.m in Sources */,

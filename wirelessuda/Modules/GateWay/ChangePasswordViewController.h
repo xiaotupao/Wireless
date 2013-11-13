@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PasswordCellView.h"
 
 @interface ChangePasswordViewController : UIViewController
 {
-    UITextField *beformPsdText;
-    UITextField *newPsdText;
-    UITextField *conformPsdText;
+    PasswordCellView *cell;
+    UITextField *oldPsd;
+    UITextField *newPsd;
+    UITextField *conformPsd;
 }
 
 @property (nonatomic, strong)NSMutableArray *passwordArray;

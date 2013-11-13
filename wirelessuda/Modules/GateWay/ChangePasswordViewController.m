@@ -8,6 +8,7 @@
 
 #import "ChangePasswordViewController.h"
 #import "MBProgressHUD.h"
+#import "PasswordData.h"
 #import "PasswordCellView.h"
 
 @interface ChangePasswordViewController ()
@@ -41,50 +42,11 @@
     placeholderArray = [NSMutableArray arrayWithObjects:@"请输入原密码", @"请输入新密码", @"请确认新密码", nil];
     
     for (int i = 0; i<[passwordArray count]; i++) {
-        PasswordCellView *cell = [[PasswordCellView alloc]initWithFrame:CGRectMake(20, self.view.bounds.size.height - 170 + i*45, 280, 30)];
+        cell = [[PasswordCellView alloc]initWithFrame:CGRectMake(20, self.view.bounds.size.height - 170 + i*45, 280, 30)];
         cell.passName.text = [passwordArray objectAtIndex:i];
         cell.passText.tag = i;
         [self.view addSubview:cell];
     }
-	
-//#pragma mark - 原密码
-//    UILabel *beformPsdLabel = [[UILabel alloc]init];
-//    beformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-170, 80, 30);
-//    beformPsdLabel.text = @"原密码:";
-//    [self.view addSubview:beformPsdLabel];
-//    beformPsdText = [[UITextField alloc]init];
-//    beformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-170, 180 ,30);
-//    beformPsdText.borderStyle = UITextBorderStyleRoundedRect;
-//    beformPsdText.placeholder = @"请输入原密码";
-//    beformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-//    beformPsdText.secureTextEntry = YES;
-//    [self.view addSubview:beformPsdText];
-//    
-//#pragma mark - 新密码
-//    UILabel *newPsdLabel = [[UILabel alloc]init];
-//    newPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-125, 80, 30);
-//    newPsdLabel.text = @"新密码:";
-//    [self.view addSubview:newPsdLabel];
-//    newPsdText = [[UITextField alloc]init];
-//    newPsdText.frame = CGRectMake(100, self.view.bounds.size.height-125, 180, 30);
-//    newPsdText.borderStyle = UITextBorderStyleRoundedRect;
-//    newPsdText.placeholder = @"请输入新密码";
-//    newPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-//    newPsdText.secureTextEntry = YES;
-//    [self.view addSubview:newPsdText];
-//    
-//#pragma mark - 确认密码
-//    UILabel *conformPsdLabel = [[UILabel alloc]init];
-//    conformPsdLabel.frame = CGRectMake(20, self.view.bounds.size.height-80, 80, 30);
-//    conformPsdLabel.text = @"确认密码:";
-//    [self.view addSubview:conformPsdLabel];
-//    conformPsdText = [[UITextField alloc]init];
-//    conformPsdText.frame = CGRectMake(100, self.view.bounds.size.height-80, 180, 30);
-//    conformPsdText.borderStyle = UITextBorderStyleRoundedRect;
-//    conformPsdText.placeholder = @"请确认新密码";
-//    conformPsdText.contentHorizontalAlignment = UIControlContentVerticalAlignmentCenter;
-//    conformPsdText.secureTextEntry = YES;
-//    [self.view addSubview:conformPsdText];
     
 #pragma mark - 确认按钮
     UIButton *confirm = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -102,80 +64,36 @@
 #pragma mark - 确认按钮
 - (void)onConfirmClick
 {
-    if (!beformPsdText||!beformPsdText.text||[@"" isEqualToString:[beformPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"    请输入原密码!     ";
-        hud.margin = 10.f;
-        hud.yOffset = 180.f;
-        hud.removeFromSuperViewOnHide = YES;
-        [hud hide:YES afterDelay:2];
-        [beformPsdText becomeFirstResponder];
-        return;
+    switch (cell.passText.tag) {
+        case 0:
+        {
+            oldPsd = cell.passText;
+        }
+            break;
+            
+        case 1:
+        {
+            newPsd = cell.passText;
+        }
+            break;
+        
+        case 2:
+        {
+            conformPsd = cell.passText;
+        }
+            break;
+            
+        default:
+            break;
     }
-//    
-//    if (![beformPsdText.text isEqualToString:self.userEntity.password]) {
-//        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//        hud.mode = MBProgressHUDModeText;
-//        hud.labelText = @"    原密码不正确,请重新输入!     ";
-//        hud.margin = 10.f;
-//        hud.yOffset = 180.f;
-//        hud.removeFromSuperViewOnHide = YES;
-//        [hud hide:YES afterDelay:2];
-//        [beformPsdText becomeFirstResponder];
-//        beformPsdText.text = nil;
-//        return;
-//    }
-    
-    if (!newPsdText||!newPsdText.text||[@"" isEqualToString:[newPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"    请输入新密码!     ";
-        hud.margin = 10.f;
-        hud.yOffset = 180.f;
-        hud.removeFromSuperViewOnHide = YES;
-        [hud hide:YES afterDelay:2];
-        [newPsdText becomeFirstResponder];
-        return;
-    }
-    
-    if ([newPsdText.text length]< 6) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"    新密码长度太短!     ";
-        hud.margin = 10.f;
-        hud.yOffset = 180.f;
-        hud.removeFromSuperViewOnHide = YES;
-        [hud hide:YES afterDelay:2];
-        [newPsdText becomeFirstResponder];
-        return;
-    }
-    
-    if (!conformPsdText||!conformPsdText.text||[@"" isEqualToString:[conformPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"    请确认新密码!     ";
-        hud.margin = 10.f;
-        hud.yOffset = 180.f;
-        hud.removeFromSuperViewOnHide = YES;
-        [hud hide:YES afterDelay:2];
-        [conformPsdText becomeFirstResponder];
-        return;
-    }
-    
-    if (![conformPsdText.text isEqualToString:newPsdText.text]) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"    两次输入不一致,请重新输入!     ";
-        hud.margin = 10.f;
-        hud.yOffset = 180.f;
-        hud.removeFromSuperViewOnHide = YES;
-        [hud hide:YES afterDelay:2];
-        [conformPsdText becomeFirstResponder];
-        conformPsdText.text = nil;
-        return;
-    }
-    
+    UILabel *response = [PasswordData judgePassword:oldPsd andNewPassword:newPsd andConfirmPassword:conformPsd];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = response.text;
+    hud.margin = 10.0f;
+    hud.yOffset = 180.0f;
+    hud.removeFromSuperViewOnHide = YES;
+    [hud hide:YES afterDelay:2];
 }
 
 #pragma mark - 触摸键盘消失
