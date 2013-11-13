@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface GateWayViewController : UIViewController
+{
+    UIViewController *openView;//视图
+    CGFloat span;
+}
+
+@property (strong, nonatomic)UIButton *userPhoto;
+@property (strong, nonatomic)UILabel *userInfo;
+@property (strong, nonatomic)UIButton *appButton;
+@property (strong, nonatomic)NSMutableArray *appArray;
 
 @end

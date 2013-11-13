@@ -33,13 +33,13 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];  //设置statusbar为白底黑字
     
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
     self.view.backgroundColor=[UIColor whiteColor];
     login=[[UIWebView alloc]initWithFrame:CGRectMake(0, 0, 320, SCREEN_HEIGHT)];
     NSURL *url=[NSURL URLWithString:@"http://wg.suda.edu.cn"];
     [login loadRequest:[NSURLRequest requestWithURL:url]];
     [self.view addSubview:login];
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
