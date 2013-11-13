@@ -15,7 +15,7 @@
     UILabel *response = [[UILabel alloc]init];
     
     if (!beformPsdText||!beformPsdText.text||[@"" isEqualToString:[beformPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        response.text = @"    请输入原密码!     ";
+        response.text = @"请输入原密码!";
         return response;
     }
     //
@@ -33,22 +33,22 @@
     //    }
     
     if (!newPsdText||!newPsdText.text||[@"" isEqualToString:[newPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        response.text = @"    请输入新密码!     ";
+        response.text = @"请输入新密码!";
         return response;
     }
     
     if ([newPsdText.text length]< 6) {
-        response.text = @"    新密码长度太短!     ";
+        response.text = @"新密码长度太短!";
         return response;
     }
     
     if (!conformPsdText||!conformPsdText.text||[@"" isEqualToString:[conformPsdText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
-        response.text = @"    请确认新密码!     ";
+        response.text = @"请确认新密码!";
         return response;
     }
     
     if (![conformPsdText.text isEqualToString:newPsdText.text]) {
-        response.text = @"    两次输入不一致,请重新输入!     ";
+        response.text = @"两次输入不一致,请重新输入!";
         conformPsdText.text = nil;
         return response;
     }

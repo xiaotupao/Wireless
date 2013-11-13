@@ -45,6 +45,28 @@
         cell = [[PasswordCellView alloc]initWithFrame:CGRectMake(20, self.view.bounds.size.height - 170 + i*45, 280, 30)];
         cell.passName.text = [passwordArray objectAtIndex:i];
         cell.passText.tag = i;
+        switch (cell.passText.tag) {
+            case 0:
+            {
+                oldPsd = cell.passText;
+            }
+                break;
+                
+            case 1:
+            {
+                newPsd = cell.passText;
+            }
+                break;
+                
+            case 2:
+            {
+                conformPsd = cell.passText;
+            }
+                break;
+                
+            default:
+                break;
+        }
         [self.view addSubview:cell];
     }
     
@@ -64,36 +86,16 @@
 #pragma mark - 确认按钮
 - (void)onConfirmClick
 {
-    switch (cell.passText.tag) {
-        case 0:
-        {
-            oldPsd = cell.passText;
-        }
-            break;
-            
-        case 1:
-        {
-            newPsd = cell.passText;
-        }
-            break;
-        
-        case 2:
-        {
-            conformPsd = cell.passText;
-        }
-            break;
-            
-        default:
-            break;
-    }
     UILabel *response = [PasswordData judgePassword:oldPsd andNewPassword:newPsd andConfirmPassword:conformPsd];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.labelText = response.text;
-    hud.margin = 10.0f;
+    hud.margin = 12.0f;
     hud.yOffset = 180.0f;
     hud.removeFromSuperViewOnHide = YES;
     [hud hide:YES afterDelay:2];
+    NSLog(@"%@",hud.labelText);
+
 }
 
 #pragma mark - 触摸键盘消失
