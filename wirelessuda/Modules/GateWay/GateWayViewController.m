@@ -98,19 +98,6 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
-//测试代理方法
--(void)btClicked:(id)sender
-{
-    GateWayModel *gateWayModel=[GateWayModel shareInstance];
-    gateWayModel.delegate=self;
-    [gateWayModel start:@"login" withUrl:@"http://jsglxt.suda.edu.cn/api_login.action" withParam1:@"sunxu" withParam2:@"000000" withParam3:nil withParam4:nil];
-}
-
--(void)getLoginResult:(NSString *)status
-{
-    NSLog(@">>>>>>>>status:%@",status);
-}
-
 - (void)onClickOpen:(UIButton*)button
 {
     NSLog(@"%d",button.tag);
