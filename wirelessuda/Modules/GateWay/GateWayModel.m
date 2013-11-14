@@ -8,22 +8,11 @@
 
 #import "GateWayModel.h"
 #import "SBJson.h"
-#import "ASIFormDataRequest.h"
+#import "ASIHTTPRequest.h"
 
 @implementation GateWayModel
 
 @synthesize delegate;
-@synthesize netWorkQueue;
-
--(id)init{
-    if (self=[super init]) {
-        if (!netWorkQueue) {
-            netWorkQueue=[[ASINetworkQueue alloc]init];
-            [netWorkQueue go];
-        }
-    }
-    return self;
-}
 
 +(GateWayModel *)shareInstance
 {
@@ -34,41 +23,47 @@
 - (void) start:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 {
     if ([tag isEqualToString:@"login"]) {
-        NSString *urlString = [NSString stringWithFormat:url,nil];
-        ASIFormDataRequest *requestForm = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
-        [requestForm setPostValue:param1 forKey:@"username"];
-        [requestForm setPostValue:param2 forKey:@"password"];
-        requestForm.delegate=self;
-        requestForm.tag=Login;
-        [netWorkQueue addOperation:requestForm];
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&password=%@",url,param1,param2];
+        NSURL *urlLast=[NSURL URLWithString:urlString];
+        NSLog(@"url=%@",urlString);
+        ASIHTTPRequest *request=[ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate=self;
+        request.tag=Login;
+        [request startSynchronous];
+        //[netWorkQueue addOperation:request];
     }
     else if ([tag isEqualToString:@"changePassword"]){
-        NSString *urlString = [NSString stringWithFormat:url,nil];
-        ASIFormDataRequest *requestForm = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
-        [requestForm setPostValue:param1 forKey:@"username"];
-        [requestForm setPostValue:param2 forKey:@"password"];
-        [requestForm setPostValue:param3 forKey:@"newPassword"];
-        requestForm.delegate = self;
-        requestForm.tag = ChangePassWord;
-        [netWorkQueue addOperation:requestForm];
+//        NSString *urlString = [NSString stringWithFormat:@"%@?%@&%@&%@",param1,param1];
+        
+//        [netWorkQueue addOperation:requestForm];
     }
+
+    
 
 }
 
 #pragma mark－requestFinish回调函数
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
-    NSString *responseString=request.responseString;
     if (request.tag==Login) {
-        NSDictionary *result=[responseString JSONValue];
-        NSString *status=[result objectForKey:@"status"];
-        [delegate getLoginResult:status];
+        [delegate getLoginResult:@"000000"];
     }
-    else if (request.tag==ChangePassWord ){
-        NSDictionary *result = [responseString JSONValue];
-        NSString *status = [result objectForKey:@"status"];
-        [delegate getChangePasswordResult:status];
-    }
+    //[delegate getLoginResult:@"000000"];
+//    NSString *responseString=request.responseString;
+//    if (request.tag==Login) {
+//        if (responseString==nil) {
+//            [delegate getLoginResult:@"0"];
+//        }else{
+//        NSDictionary *result=[responseString JSONValue];
+//        NSString *status=[result objectForKey:@"status"];
+//        [delegate getLoginResult:status];
+//        }
+//    }
+//    else if (request.tag==ChangePassWord ){
+//        NSDictionary *result = [responseString JSONValue];
+//        NSString *status = [result objectForKey:@"status"];
+//        [delegate getChangePasswordResult:status];
+//    }
 }
 //-(void)Demo
 //{

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410093A1835004100BA4835 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041009391835004100BA4835 /* LoginViewController.m */; };
+		0410094B1835035400BA4835 /* auto_login_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410093D1835035400BA4835 /* auto_login_frame@2x.png */; };
+		0410094C1835035400BA4835 /* auto_login2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410093E1835035400BA4835 /* auto_login2@2x.png */; };
+		0410094D1835035400BA4835 /* btn_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410093F1835035400BA4835 /* btn_nor.png */; };
+		0410094E1835035400BA4835 /* btn_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009401835035400BA4835 /* btn_nor@2x.png */; };
+		0410094F1835035400BA4835 /* btn_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009411835035400BA4835 /* btn_press.png */; };
+		041009501835035400BA4835 /* btn_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009421835035400BA4835 /* btn_press@2x.png */; };
+		041009511835035400BA4835 /* login_bg_ip5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041009431835035400BA4835 /* login_bg_ip5@2x.jpg */; };
+		041009521835035400BA4835 /* login_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041009441835035400BA4835 /* login_bg.jpg */; };
+		041009531835035400BA4835 /* login_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041009451835035400BA4835 /* login_bg@2x.jpg */; };
+		041009541835035400BA4835 /* login_textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009461835035400BA4835 /* login_textfield.png */; };
+		041009551835035400BA4835 /* login_textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009471835035400BA4835 /* login_textfield@2x.png */; };
+		041009561835035400BA4835 /* login18.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009481835035400BA4835 /* login18.png */; };
+		041009571835035400BA4835 /* red_line_and_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 041009491835035400BA4835 /* red_line_and_shadow.png */; };
+		041009581835035400BA4835 /* return18.png in Resources */ = {isa = PBXBuildFile; fileRef = 0410094A1835035400BA4835 /* return18.png */; };
 		041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041489CE182DD26C00BC5B0B /* GateWayLoginViewController.m */; };
 		0415644D18339B5A00892EF1 /* JWFolders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644818339B5A00892EF1 /* JWFolders.m */; };
 		0415644E18339B5A00892EF1 /* UIScreen+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415644A18339B5A00892EF1 /* UIScreen+Scale.m */; };
@@ -60,6 +75,7 @@
 		04740F41181B90DC0057B109 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3A181B90DC0057B109 /* settings.png */; };
 		04740F42181B90DC0057B109 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3B181B90DC0057B109 /* weather.png */; };
 		04740F43181B90DC0057B109 /* gateway.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3C181B90DC0057B109 /* gateway.png */; };
+		04C2E3DE18350BCE00F8F1CE /* LoginValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
 		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
@@ -97,6 +113,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041009381835004100BA4835 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		041009391835004100BA4835 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0410093D1835035400BA4835 /* auto_login_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_login_frame@2x.png"; sourceTree = "<group>"; };
+		0410093E1835035400BA4835 /* auto_login2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auto_login2@2x.png"; sourceTree = "<group>"; };
+		0410093F1835035400BA4835 /* btn_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_nor.png; sourceTree = "<group>"; };
+		041009401835035400BA4835 /* btn_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_nor@2x.png"; sourceTree = "<group>"; };
+		041009411835035400BA4835 /* btn_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_press.png; sourceTree = "<group>"; };
+		041009421835035400BA4835 /* btn_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_press@2x.png"; sourceTree = "<group>"; };
+		041009431835035400BA4835 /* login_bg_ip5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login_bg_ip5@2x.jpg"; sourceTree = "<group>"; };
+		041009441835035400BA4835 /* login_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_bg.jpg; sourceTree = "<group>"; };
+		041009451835035400BA4835 /* login_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "login_bg@2x.jpg"; sourceTree = "<group>"; };
+		041009461835035400BA4835 /* login_textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_textfield.png; sourceTree = "<group>"; };
+		041009471835035400BA4835 /* login_textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_textfield@2x.png"; sourceTree = "<group>"; };
+		041009481835035400BA4835 /* login18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login18.png; sourceTree = "<group>"; };
+		041009491835035400BA4835 /* red_line_and_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_line_and_shadow.png; sourceTree = "<group>"; };
+		0410094A1835035400BA4835 /* return18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return18.png; sourceTree = "<group>"; };
 		041489CD182DD26C00BC5B0B /* GateWayLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayLoginViewController.h; sourceTree = "<group>"; };
 		041489CE182DD26C00BC5B0B /* GateWayLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayLoginViewController.m; sourceTree = "<group>"; };
 		0415644718339B5A00892EF1 /* JWFolders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWFolders.h; sourceTree = "<group>"; };
@@ -201,6 +233,8 @@
 		04740F3A181B90DC0057B109 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		04740F3B181B90DC0057B109 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather.png; sourceTree = "<group>"; };
 		04740F3C181B90DC0057B109 /* gateway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gateway.png; sourceTree = "<group>"; };
+		04C2E3DC18350BCE00F8F1CE /* LoginValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginValidate.h; sourceTree = "<group>"; };
+		04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginValidate.m; sourceTree = "<group>"; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -264,6 +298,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410093B183502F300BA4835 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				75528386182D478F008C9C70 /* login.png */,
+				04740F36181B90DC0057B109 /* bus.png */,
+				04740F37181B90DC0057B109 /* calendar.png */,
+				04740F38181B90DC0057B109 /* card.png */,
+				04740F39181B90DC0057B109 /* news.png */,
+				04740F3A181B90DC0057B109 /* settings.png */,
+				04740F3B181B90DC0057B109 /* weather.png */,
+				04740F3C181B90DC0057B109 /* gateway.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		0410093C1835031100BA4835 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0410093D1835035400BA4835 /* auto_login_frame@2x.png */,
+				0410093E1835035400BA4835 /* auto_login2@2x.png */,
+				0410093F1835035400BA4835 /* btn_nor.png */,
+				041009401835035400BA4835 /* btn_nor@2x.png */,
+				041009411835035400BA4835 /* btn_press.png */,
+				041009421835035400BA4835 /* btn_press@2x.png */,
+				041009431835035400BA4835 /* login_bg_ip5@2x.jpg */,
+				041009441835035400BA4835 /* login_bg.jpg */,
+				041009451835035400BA4835 /* login_bg@2x.jpg */,
+				041009461835035400BA4835 /* login_textfield.png */,
+				041009471835035400BA4835 /* login_textfield@2x.png */,
+				041009481835035400BA4835 /* login18.png */,
+				041009491835035400BA4835 /* red_line_and_shadow.png */,
+				0410094A1835035400BA4835 /* return18.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		041489CC182DCCA800BC5B0B /* GateWayLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +350,8 @@
 				041564561833ACD300892EF1 /* GateWayModel.m */,
 				755B69B31833BBA3007DBEAE /* PasswordData.h */,
 				755B69B41833BBA3007DBEAE /* PasswordData.m */,
+				04C2E3DC18350BCE00F8F1CE /* LoginValidate.h */,
+				04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -430,14 +502,8 @@
 		04740F35181B90990057B109 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				75528386182D478F008C9C70 /* login.png */,
-				04740F36181B90DC0057B109 /* bus.png */,
-				04740F37181B90DC0057B109 /* calendar.png */,
-				04740F38181B90DC0057B109 /* card.png */,
-				04740F39181B90DC0057B109 /* news.png */,
-				04740F3A181B90DC0057B109 /* settings.png */,
-				04740F3B181B90DC0057B109 /* weather.png */,
-				04740F3C181B90DC0057B109 /* gateway.png */,
+				0410093C1835031100BA4835 /* image */,
+				0410093B183502F300BA4835 /* icon */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -512,6 +578,8 @@
 		7532E621182FC6D100498BB0 /* GateWayViewController */ = {
 			isa = PBXGroup;
 			children = (
+				041009381835004100BA4835 /* LoginViewController.h */,
+				041009391835004100BA4835 /* LoginViewController.m */,
 				7532E61E182F9FEC00498BB0 /* GateWayViewController.h */,
 				7532E61F182F9FEC00498BB0 /* GateWayViewController.m */,
 				7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */,
@@ -699,16 +767,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				0415647C1833AD0700892EF1 /* InfoPlist.strings in Resources */,
+				041009551835035400BA4835 /* login_textfield@2x.png in Resources */,
+				0410094C1835035400BA4835 /* auto_login2@2x.png in Resources */,
 				04740F3D181B90DC0057B109 /* bus.png in Resources */,
+				041009501835035400BA4835 /* btn_press@2x.png in Resources */,
 				75528387182D478F008C9C70 /* login.png in Resources */,
+				041009561835035400BA4835 /* login18.png in Resources */,
+				0410094D1835035400BA4835 /* btn_nor.png in Resources */,
+				0410094B1835035400BA4835 /* auto_login_frame@2x.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
+				041009531835035400BA4835 /* login_bg@2x.jpg in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
+				0410094F1835035400BA4835 /* btn_press.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,
 				7532E6D51831379A00498BB0 /* 2.png in Resources */,
+				041009521835035400BA4835 /* login_bg.jpg in Resources */,
 				04740F40181B90DC0057B109 /* news.png in Resources */,
+				041009511835035400BA4835 /* login_bg_ip5@2x.jpg in Resources */,
 				04740F42181B90DC0057B109 /* weather.png in Resources */,
 				755E14A318043D8D00C7925B /* Images.xcassets in Resources */,
 				04740F3E181B90DC0057B109 /* calendar.png in Resources */,
+				041009581835035400BA4835 /* return18.png in Resources */,
 				04740F3F181B90DC0057B109 /* card.png in Resources */,
 				041564781833AD0700892EF1 /* ASIHTTPRequest-Info.plist in Resources */,
 				75B03E4E1834F680004EC957 /* 1.png in Resources */,
@@ -755,9 +834,11 @@
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
 				041564BC1833B93F00892EF1 /* SBJsonStreamParserAdapter.m in Sources */,
 				041564C21833B93F00892EF1 /* SBJsonUTF8Stream.m in Sources */,
+				04C2E3DE18350BCE00F8F1CE /* LoginValidate.m in Sources */,
 				0415644E18339B5A00892EF1 /* UIScreen+Scale.m in Sources */,
 				041564731833AD0700892EF1 /* ASIAuthenticationDialog.m in Sources */,
 				04740F17181B85100057B109 /* SDWebImageManager.m in Sources */,
+				0410093A1835004100BA4835 /* LoginViewController.m in Sources */,
 				755B69B218338930007DBEAE /* PasswordCellView.m in Sources */,
 				041564741833AD0700892EF1 /* ASIDataCompressor.m in Sources */,
 				04740F19181B85100057B109 /* UIButton+WebCache.m in Sources */,

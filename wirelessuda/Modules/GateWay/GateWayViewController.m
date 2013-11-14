@@ -84,6 +84,18 @@
     [self.view addSubview:userPhoto];
     [self.view addSubview:userInfo];
 }
+//测试代理方法
+-(void)btClicked:(id)sender
+{
+    GateWayModel *gateWayModel=[GateWayModel shareInstance];
+    gateWayModel.delegate=self;
+    [gateWayModel start:@"login" withUrl:@"http://jsglxt.suda.edu.cn/api_login.action" withParam1:@"sunxu" withParam2:@"000000" withParam3:nil withParam4:nil];
+}
+
+-(void)getLoginResult:(NSString *)status
+{
+    NSLog(@">>>>>>>>status:%@",status);
+}
 
 - (void)onClickOpen:(UIButton*)button
 {
@@ -137,7 +149,12 @@
         [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+deltaY, self.view.frame.size.width , self.view.frame.size.height)];
     }];
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.hidden=NO;
+}
 
 - (void)didReceiveMemoryWarning
 {
