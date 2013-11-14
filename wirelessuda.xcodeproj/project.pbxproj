@@ -61,7 +61,6 @@
 		04740F42181B90DC0057B109 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3B181B90DC0057B109 /* weather.png */; };
 		04740F43181B90DC0057B109 /* gateway.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3C181B90DC0057B109 /* gateway.png */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
-		7532E6D1183131A000498BB0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D0183131A000498BB0 /* 1.png */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
 		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
 		7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */; };
@@ -84,6 +83,7 @@
 		755E14AC18043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
 		755E14B418043D8D00C7925B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755E14B218043D8D00C7925B /* InfoPlist.strings */; };
 		755E14B618043D8D00C7925B /* wirelessudaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755E14B518043D8D00C7925B /* wirelessudaTests.m */; };
+		75B03E4E1834F680004EC957 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75B03E4D1834F680004EC957 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +203,6 @@
 		04740F3C181B90DC0057B109 /* gateway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gateway.png; sourceTree = "<group>"; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
-		7532E6D0183131A000498BB0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
@@ -234,6 +233,7 @@
 		755E14B118043D8D00C7925B /* wirelessudaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wirelessudaTests-Info.plist"; sourceTree = "<group>"; };
 		755E14B318043D8D00C7925B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		755E14B518043D8D00C7925B /* wirelessudaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wirelessudaTests.m; sourceTree = "<group>"; };
+		75B03E4D1834F680004EC957 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -587,8 +587,8 @@
 				04740F27181B86870057B109 /* WLSudaMainViewController.h */,
 				04740F28181B86870057B109 /* WLSudaMainViewController.m */,
 				755E14A218043D8D00C7925B /* Images.xcassets */,
+				75B03E4D1834F680004EC957 /* 1.png */,
 				7532E6D41831379A00498BB0 /* 2.png */,
-				7532E6D0183131A000498BB0 /* 1.png */,
 				755E149718043D8D00C7925B /* Supporting Files */,
 			);
 			path = wirelessuda;
@@ -698,7 +698,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7532E6D1183131A000498BB0 /* 1.png in Resources */,
 				0415647C1833AD0700892EF1 /* InfoPlist.strings in Resources */,
 				04740F3D181B90DC0057B109 /* bus.png in Resources */,
 				75528387182D478F008C9C70 /* login.png in Resources */,
@@ -712,6 +711,7 @@
 				04740F3E181B90DC0057B109 /* calendar.png in Resources */,
 				04740F3F181B90DC0057B109 /* card.png in Resources */,
 				041564781833AD0700892EF1 /* ASIHTTPRequest-Info.plist in Resources */,
+				75B03E4E1834F680004EC957 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

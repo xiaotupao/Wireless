@@ -14,7 +14,7 @@
     CGFloat span;
 }
 
-@property (strong, nonatomic)UIButton *userPhoto;
+@property (strong, nonatomic)UIImageView *userPhoto;
 @property (strong, nonatomic)UILabel *userInfo;
 @property (strong, nonatomic)UIButton *appButton;
 @property (strong, nonatomic)NSMutableArray *appArray;

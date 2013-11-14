@@ -41,7 +41,7 @@
     //通知中心addObserver
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(transformView:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
-    self.view.backgroundColor=[UIColor whiteColor];
+    self.view.backgroundColor=[UIColor grayColor];
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     CGFloat originHeight = 0.0;
     if (height > 500.0) {
@@ -54,18 +54,26 @@
         span = -20.0;
     }
 #pragma mark - 头像
-    userPhoto = [[UIButton alloc]initWithFrame:CGRectMake(120, originHeight, 80, 80)];
-    [userPhoto setImage:[UIImage imageNamed:@"1.png"] forState:UIControlStateNormal];
+    userPhoto = [[UIImageView alloc]initWithFrame:CGRectMake(110, originHeight, 100, 100)];
+    userPhoto.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    userPhoto.image = [UIImage imageNamed:@"1.png"];
+    userPhoto.layer.masksToBounds = YES;
+    userPhoto.layer.cornerRadius = 50.0;
+    userPhoto.layer.borderColor = [UIColor whiteColor].CGColor;
+    userPhoto.layer.borderWidth = 3.0f;
+    userPhoto.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    userPhoto.layer.shouldRasterize = YES;
+    userPhoto.clipsToBounds = YES;
     
 #pragma mark - 个人信息
     userInfo = [[UILabel alloc]initWithFrame:CGRectMake(30, originHeight+userPhoto.bounds.size.height+10, 260, 120)];
     //UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"2.png"]];
-    [userInfo setBackgroundColor:[UIColor grayColor]];
+    [userInfo setBackgroundColor:[UIColor whiteColor]];
     
 #pragma mark - 功能按钮
     appArray = [[NSMutableArray alloc]initWithObjects:@"绑定手机", @"修改密码", nil];
     for (int i = 0; i<[appArray count]; i++) {
-        appButton = [[UIButton alloc]initWithFrame:CGRectMake(80+i*(55+50), originHeight+userPhoto.bounds.size.height+userInfo.bounds.size.height+80, 55, 55)];
+        appButton = [[UIButton alloc]initWithFrame:CGRectMake(60+i*(70+60), originHeight+userPhoto.bounds.size.height+userInfo.bounds.size.height+80, 70, 70)];
         [appButton setImage:[UIImage imageNamed:@"login.png"] forState:UIControlStateNormal];
         [appButton addTarget:self action:@selector(onClickOpen:) forControlEvents:UIControlEventTouchUpInside];
         appButton.tag = i;

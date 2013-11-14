@@ -24,6 +24,7 @@
     UINavigationController *mainNavigationController=[[UINavigationController alloc]initWithRootViewController:mainViewController];
     self.window.rootViewController = mainNavigationController;
     [self.window addSubview:mainNavigationController.view];
+    //self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     mainNavigationController.navigationBar.translucent=YES;
     //[application setStatusBarStyle:UIStatusBarStyleLightContent];
