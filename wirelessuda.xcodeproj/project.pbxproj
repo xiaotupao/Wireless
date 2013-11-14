@@ -766,6 +766,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7532E6D1183131A000498BB0 /* 1.png in Resources */,
+				0410094E1835035400BA4835 /* btn_nor@2x.png in Resources */,
+				041009571835035400BA4835 /* red_line_and_shadow.png in Resources */,
 				0415647C1833AD0700892EF1 /* InfoPlist.strings in Resources */,
 				041009551835035400BA4835 /* login_textfield@2x.png in Resources */,
 				0410094C1835035400BA4835 /* auto_login2@2x.png in Resources */,
@@ -791,6 +794,7 @@
 				04740F3F181B90DC0057B109 /* card.png in Resources */,
 				041564781833AD0700892EF1 /* ASIHTTPRequest-Info.plist in Resources */,
 				75B03E4E1834F680004EC957 /* 1.png in Resources */,
+				041009541835035400BA4835 /* login_textfield.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

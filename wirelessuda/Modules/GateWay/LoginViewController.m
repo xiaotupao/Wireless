@@ -20,6 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.navigationItem.title = @"首页";
     }
     return self;
 }
@@ -126,7 +127,7 @@
 - (void)onLoginClick
 {
     GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:appViewController animated:YES];
+    [self.navigationController pushViewController:appViewController animated:NO];
     appViewController.navigationController.navigationBar.hidden=NO;
 //    #pragma mark - 登录信息判断
 //    if (!usernameText||!usernameText.text||[@"" isEqualToString:[usernameText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]])

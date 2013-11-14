@@ -38,6 +38,13 @@
 	// Do any additional setup after loading the view.
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];  //设置statusbar为白底黑字
     
+#pragma mark - 返回按钮
+    UIBarButtonItem *BackBtn = [[UIBarButtonItem alloc] initWithTitle:@"首页"
+                                                                style:UIBarButtonItemStylePlain
+                                                               target:self
+                                                               action:@selector(backAction:)];
+    self.navigationItem.leftBarButtonItem = BackBtn;
+    
     //通知中心addObserver
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(transformView:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
@@ -84,6 +91,13 @@
     [self.view addSubview:userPhoto];
     [self.view addSubview:userInfo];
 }
+
+#pragma mark - 返回按钮
+-(void)backAction:(UIButton *)backButton
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 //测试代理方法
 -(void)btClicked:(id)sender
 {
