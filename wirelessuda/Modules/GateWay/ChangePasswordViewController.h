@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PasswordCellView.h"
+#import "ASIHTTPRequest.h"
+#import "GateWayModel.h"
 
-@interface ChangePasswordViewController : UIViewController
+@interface ChangePasswordViewController : UIViewController<GateWayDelegtate>
 {
     PasswordCellView *cell;
     UITextField *oldPsd;
@@ -19,5 +21,6 @@
 
 @property (nonatomic, strong)NSMutableArray *passwordArray;
 @property (nonatomic, strong)NSMutableArray *placeholderArray;
+@property (nonatomic, strong)NSString *nowStatus;
 
 @end

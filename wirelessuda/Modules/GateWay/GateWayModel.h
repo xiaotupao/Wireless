@@ -23,13 +23,14 @@ typedef enum {
 @property (nonatomic,retain) ASINetworkQueue *netWorkQueue;
 
 + (GateWayModel *)shareInstance;
-- (void) startLogin:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
+- (void) start:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 
 @end
 @protocol GateWayDelegtate <NSObject>
 
 @optional
 -(void)getLoginResult:(NSString *)status;
+-(void)getChangePasswordResult:(NSString *)status;
 
 @end
 

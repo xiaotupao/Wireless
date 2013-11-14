@@ -31,7 +31,7 @@
     return gateWayModel;
 }
 #pragma mark－ request入口
-- (void) startLogin:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
+- (void) start:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 {
     if ([tag isEqualToString:@"login"]) {
         NSString *urlString = [NSString stringWithFormat:url,nil];
@@ -43,7 +43,14 @@
         [netWorkQueue addOperation:requestForm];
     }
     else if ([tag isEqualToString:@"changePassword"]){
-        
+        NSString *urlString = [NSString stringWithFormat:url,nil];
+        ASIFormDataRequest *requestForm = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
+        [requestForm setPostValue:param1 forKey:@"username"];
+        [requestForm setPostValue:param2 forKey:@"password"];
+        [requestForm setPostValue:param3 forKey:@"newPassword"];
+        requestForm.delegate = self;
+        requestForm.tag = ChangePassWord;
+        [netWorkQueue addOperation:requestForm];
     }
 
 }
@@ -58,7 +65,9 @@
         [delegate getLoginResult:status];
     }
     else if (request.tag==ChangePassWord ){
-        
+        NSDictionary *result = [responseString JSONValue];
+        NSString *status = [result objectForKey:@"status"];
+        [delegate getChangePasswordResult:status];
     }
 }
 //-(void)Demo

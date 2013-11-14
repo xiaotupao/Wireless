@@ -9,7 +9,6 @@
 #import "ChangePasswordViewController.h"
 #import "MBProgressHUD.h"
 #import "PasswordData.h"
-#import "PasswordCellView.h"
 
 @interface ChangePasswordViewController ()
 
@@ -19,6 +18,7 @@
 
 @synthesize passwordArray;
 @synthesize placeholderArray;
+@synthesize nowStatus;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -87,15 +87,30 @@
 - (void)onConfirmClick
 {
     UILabel *response = [PasswordData judgePassword:oldPsd andNewPassword:newPsd andConfirmPassword:conformPsd];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = response.text;
-    hud.margin = 12.0f;
-    hud.yOffset = 180.0f;
-    hud.removeFromSuperViewOnHide = YES;
-    [hud hide:YES afterDelay:2];
-    NSLog(@"%@",hud.labelText);
+    if (!(response.text == nil)) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = response.text;
+        hud.margin = 12.0f;
+        hud.yOffset = 180.0f;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:2];
+    }
+    
+    GateWayModel *gatewayModel = [GateWayModel shareInstance];
+    [gatewayModel start:@"ChangePassWord" withUrl:@"http://jsglxt.suda.edu.cn/api_changePsd.action" withParam1:oldPsd.text withParam2:newPsd.text withParam3:conformPsd.text withParam4:nil];
+    gatewayModel.delegate = self;
+    
+}
 
+-(void)getChangePasswordResult:(NSString *)status
+{
+    self.nowStatus = status;
+    NSLog(@"%@",self.nowStatus);
+    if ([self.nowStatus isEqualToString:@"0"]) {
+        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:nil message:@"修改密码成功!请重新登录!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 #pragma mark - 触摸键盘消失
