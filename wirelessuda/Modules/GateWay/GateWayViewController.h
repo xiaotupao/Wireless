@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GateWayModel.h"
 
-@interface GateWayViewController : UIViewController
+@interface GateWayViewController : UIViewController<GateWayDelegtate>
 {
     UIViewController *openView;//视图
     CGFloat span;

@@ -56,6 +56,8 @@
 #pragma mark - 头像
     userPhoto = [[UIButton alloc]initWithFrame:CGRectMake(120, originHeight, 80, 80)];
     [userPhoto setImage:[UIImage imageNamed:@"1.png"] forState:UIControlStateNormal];
+#pragma mark -测试代理
+    [userPhoto addTarget:self action:@selector(btClicked:) forControlEvents:UIControlEventTouchUpInside];
     
 #pragma mark - 个人信息
     userInfo = [[UILabel alloc]initWithFrame:CGRectMake(30, originHeight+userPhoto.bounds.size.height+10, 260, 120)];
@@ -75,6 +77,18 @@
     
     [self.view addSubview:userPhoto];
     [self.view addSubview:userInfo];
+}
+//测试代理方法
+-(void)btClicked:(id)sender
+{
+    GateWayModel *gateWayModel=[GateWayModel shareInstance];
+    gateWayModel.delegate=self;
+    [gateWayModel start:@"login" withUrl:@"http://jsglxt.suda.edu.cn/api_login.action" withParam1:@"sunxu" withParam2:@"000000" withParam3:nil withParam4:nil];
+}
+
+-(void)getLoginResult:(NSString *)status
+{
+    NSLog(@">>>>>>>>status:%@",status);
 }
 
 - (void)onClickOpen:(UIButton*)button
@@ -129,7 +143,12 @@
         [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+deltaY, self.view.frame.size.width , self.view.frame.size.height)];
     }];
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.hidden=NO;
+}
 
 - (void)didReceiveMemoryWarning
 {
