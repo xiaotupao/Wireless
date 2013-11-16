@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GateWayModel.h"
 
-@interface LoginValidate : NSObject
+@interface LoginValidate : NSObject<GateWayDelegtate>
+
+@property (strong, nonatomic)NSString *status;
+
+-(NSString *)validateLogin:(NSString *)username withPassword:(NSString*) password;
 
 @end

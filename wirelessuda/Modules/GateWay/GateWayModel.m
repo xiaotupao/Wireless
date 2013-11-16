@@ -45,20 +45,20 @@
 #pragma mark－requestFinish回调函数
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
-    if (request.tag==Login) {
-        [delegate getLoginResult:@"000000"];
-    }
-    //[delegate getLoginResult:@"000000"];
-//    NSString *responseString=request.responseString;
 //    if (request.tag==Login) {
-//        if (responseString==nil) {
-//            [delegate getLoginResult:@"0"];
-//        }else{
-//        NSDictionary *result=[responseString JSONValue];
-//        NSString *status=[result objectForKey:@"status"];
-//        [delegate getLoginResult:status];
-//        }
+//        [delegate getLoginResult:@"000000"];
 //    }
+    //[delegate getLoginResult:@"000000"];
+    NSString *responseString=request.responseString;
+    if (request.tag==Login) {
+        if (responseString==nil) {
+            [delegate getLoginResult:@"0"];
+        }else{
+        NSDictionary *result=[responseString JSONValue];
+        NSString *status=[result objectForKey:@"status"];
+        [delegate getLoginResult:status];
+        }
+    }
 //    else if (request.tag==ChangePassWord ){
 //        NSDictionary *result = [responseString JSONValue];
 //        NSString *status = [result objectForKey:@"status"];

@@ -19,7 +19,7 @@ typedef enum {
 
 @interface GateWayModel : NSObject<ASIHTTPRequestDelegate>
 
-@property (nonatomic,assign) id<GateWayDelegtate> delegate;
+@property (strong, nonatomic) id<GateWayDelegtate> delegate;
 
 + (GateWayModel *)shareInstance;
 - (void) start:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;

@@ -36,6 +36,7 @@
 	// Do any additional setup after loading the view。
     
 #pragma mark-定义第二层背景
+    //判断ios系统？？
     background=[[UIView  alloc]initWithFrame:CGRectMake(0, 20, 320, SCREEN_HEIGHT-20)];
     background.backgroundColor=[UIColor whiteColor];
     

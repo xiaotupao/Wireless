@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "GateWayViewController.h"
+#import "LoginValidate.h"
 
 @interface LoginViewController ()
 
@@ -32,31 +33,32 @@
     #pragma mark - 背景图片初始化
     //self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"login_bg.jpg"]];
     self.view.backgroundColor = [UIColor blackColor];
+    //判断ios系统
     UIView *subBackground=[[UIView alloc]initWithFrame:CGRectMake(0, 20, 320, SCREEN_HEIGHT-20)];
     subBackground.backgroundColor=[UIColor lightGrayColor];
     
     #pragma mark - 输入子视框
     UIImageView* loginView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"login_textfield"]];
-    loginView.frame=CGRectMake(10, 110, 300, 94);
+    loginView.frame=CGRectMake(10, 130, 300, 94);
     [subBackground addSubview:loginView];
     
     #pragma mark - 输入框和文字提示
-    UILabel *usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 120, 60, 35)];
+    UILabel *usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 140, 60, 35)];
     usernameLabel.text = @"用户：";
     [subBackground addSubview:usernameLabel];
-    UILabel *passwordLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 160, 60, 35)];
+    UILabel *passwordLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 180, 60, 35)];
     passwordLabel.text = @"密码：";
     [subBackground addSubview:passwordLabel];
     
     #pragma mark - 用户名和密码的UITextField
-    usernameText=[[UITextField alloc] initWithFrame:CGRectMake(90, 120, 200, 35)];
+    usernameText=[[UITextField alloc] initWithFrame:CGRectMake(90, 140, 200, 35)];
     usernameText.placeholder=@"请输入网关账号";
     usernameText.autocapitalizationType=UITextAutocapitalizationTypeNone;
     usernameText.autocorrectionType=UITextAutocorrectionTypeNo;
     usernameText.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
     [subBackground addSubview:usernameText];
     
-    passwordText=[[UITextField alloc] initWithFrame:CGRectMake(90, 160, 200, 35)];
+    passwordText=[[UITextField alloc] initWithFrame:CGRectMake(90, 180, 200, 35)];
     passwordText.placeholder=@"请输入网关密码";
     passwordText.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
     passwordText.secureTextEntry = YES;
@@ -64,14 +66,14 @@
     
     #pragma mark - 登陆UIButton
     UIButton* btnLogin=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btnLogin.frame=CGRectMake(15, 230, 140, 44);
+    btnLogin.frame=CGRectMake(15, 260, 140, 44);
     [btnLogin setBackgroundImage:[UIImage imageNamed:@"login18"] forState:UIControlStateNormal];
     [btnLogin addTarget:self action:@selector(onLoginClick) forControlEvents:UIControlEventTouchUpInside];
     [subBackground addSubview:btnLogin];
     
     #pragma mark - 返回UIButton
     UIButton* btnBack=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btnBack.frame=CGRectMake(165, 230, 140, 44);
+    btnBack.frame=CGRectMake(165, 260, 140, 44);
     [btnBack setTitle:@"" forState:UIControlStateNormal];
     [btnBack setBackgroundImage:[UIImage imageNamed:@"return18"] forState:UIControlStateNormal];
     [btnBack addTarget:self action:@selector(onBackClick) forControlEvents:UIControlEventTouchUpInside];
@@ -79,7 +81,7 @@
 
     #pragma mark - 忘记密码
     UIButton* btnForget=[UIButton buttonWithType:UIButtonTypeCustom];
-    btnForget.frame=CGRectMake(20, 280, 80, 40);
+    btnForget.frame=CGRectMake(20, 320, 80, 40);
     btnForget.titleLabel.font=[UIFont boldSystemFontOfSize:15];
     [btnForget setTitle:@"忘记密码?" forState:UIControlStateNormal];
     btnForget.showsTouchWhenHighlighted=YES;
@@ -88,7 +90,7 @@
     
     #pragma mark - 自动登录
     UIButton* btnAutoLogin=[UIButton buttonWithType:UIButtonTypeCustom];
-    btnAutoLogin.frame=CGRectMake(170, 280, 130, 40);
+    btnAutoLogin.frame=CGRectMake(170, 320, 130, 40);
     btnAutoLogin.titleLabel.font=[UIFont boldSystemFontOfSize:15];
     [btnAutoLogin setTitle:@"允许自动登录" forState:UIControlStateNormal];
     [btnAutoLogin setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
@@ -101,7 +103,7 @@
     [subBackground addSubview:btnAutoLogin];
     
     #pragma mark - 文字提醒
-    UITextView* tipsView=[[UITextView alloc] initWithFrame:CGRectMake(20, self.view.bounds.size.height-140, 280, 100)];
+    UITextView* tipsView=[[UITextView alloc] initWithFrame:CGRectMake(20, 400, 280, 100)];
     tipsView.backgroundColor=[UIColor clearColor];
     tipsView.textColor=[UIColor whiteColor];
     tipsView.font=[UIFont systemFontOfSize:13];
@@ -126,9 +128,38 @@
 #pragma mark - 登录按钮
 - (void)onLoginClick
 {
-    GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:appViewController animated:NO];
-    appViewController.navigationController.navigationBar.hidden=NO;
+    LoginValidate *loginValidate=[[LoginValidate alloc]init];
+    
+    NSString *result=[loginValidate validateLogin:usernameText.text withPassword:passwordText.text];
+    if ([result isEqualToString:@"0"]) {
+        GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
+        [self.navigationController pushViewController:appViewController animated:NO];
+        appViewController.navigationController.navigationBar.hidden=NO;
+    }
+    else if([result isEqualToString:@"3"]){
+        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:nil message:@"用户名或密码输入错误！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }else if ([result isEqualToString:@"1"]){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"     请输入用户名！     ";
+        hud.margin = 10.f;
+        hud.yOffset = -60.f;
+         hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:2];
+        [usernameText becomeFirstResponder];
+    }else if ([result isEqualToString:@"2"]){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"     请输入密码！     ";
+        hud.margin = 10.f;
+        hud.yOffset = -60.f;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:2];
+        [passwordText becomeFirstResponder];
+
+    }
+
 //    #pragma mark - 登录信息判断
 //    if (!usernameText||!usernameText.text||[@"" isEqualToString:[usernameText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]])
 //    {
