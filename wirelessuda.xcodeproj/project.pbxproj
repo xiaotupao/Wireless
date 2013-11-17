@@ -671,6 +671,7 @@
 				04740F27181B86870057B109 /* WLSudaMainViewController.h */,
 				04740F28181B86870057B109 /* WLSudaMainViewController.m */,
 				755E14A218043D8D00C7925B /* Images.xcassets */,
+				753129341837C7B600008D5D /* 1.png */,
 				7532E6D41831379A00498BB0 /* 2.png */,
 				755E149718043D8D00C7925B /* Supporting Files */,
 			);
@@ -794,6 +795,7 @@
 				0410094B1835035400BA4835 /* auto_login_frame@2x.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
 				041009531835035400BA4835 /* login_bg@2x.jpg in Resources */,
+				753129351837C7B600008D5D /* 1.png in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
 				0410094F1835035400BA4835 /* btn_press.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,

@@ -19,6 +19,7 @@
     GateWayModel *gateWayModel=[[GateWayModel alloc]init];
     return gateWayModel;
 }
+
 #pragma mark－ request入口
 - (void) start:(NSString *)tag withUrl:(NSString *)url withParam1:(NSString *)param1 withParam2:(NSString *)param2 withParam3:(NSString *)param3 withParam4:(NSString *)param4;
 {
@@ -30,7 +31,6 @@
         request.delegate=self;
         request.tag=Login;
         [request startSynchronous];
-        //[netWorkQueue addOperation:request];
     }
     else if ([tag isEqualToString:@"changePassword"]){
 //        NSString *urlString = [NSString stringWithFormat:@"%@?%@&%@&%@",param1,param1];
