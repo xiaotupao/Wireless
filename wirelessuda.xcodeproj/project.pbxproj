@@ -76,6 +76,8 @@
 		04740F42181B90DC0057B109 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3B181B90DC0057B109 /* weather.png */; };
 		04740F43181B90DC0057B109 /* gateway.png in Resources */ = {isa = PBXBuildFile; fileRef = 04740F3C181B90DC0057B109 /* gateway.png */; };
 		04C2E3DE18350BCE00F8F1CE /* LoginValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */; };
+		04FFBB241839022700BA9199 /* CardLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB231839022700BA9199 /* CardLoginViewController.m */; };
+		04FFBB2818390F3400BA9199 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB2718390F3400BA9199 /* CardViewController.m */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
 		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
@@ -234,6 +236,10 @@
 		04740F3C181B90DC0057B109 /* gateway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gateway.png; sourceTree = "<group>"; };
 		04C2E3DC18350BCE00F8F1CE /* LoginValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginValidate.h; sourceTree = "<group>"; };
 		04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginValidate.m; sourceTree = "<group>"; };
+		04FFBB221839022700BA9199 /* CardLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLoginViewController.h; sourceTree = "<group>"; };
+		04FFBB231839022700BA9199 /* CardLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLoginViewController.m; sourceTree = "<group>"; };
+		04FFBB2618390F3400BA9199 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		04FFBB2718390F3400BA9199 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -531,6 +537,7 @@
 		04BFC709181C847F00B1CF88 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				04FFBB2518390B9D00BA9199 /* CardViewController */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -561,6 +568,17 @@
 			children = (
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		04FFBB2518390B9D00BA9199 /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FFBB221839022700BA9199 /* CardLoginViewController.h */,
+				04FFBB231839022700BA9199 /* CardLoginViewController.m */,
+				04FFBB2618390F3400BA9199 /* CardViewController.h */,
+				04FFBB2718390F3400BA9199 /* CardViewController.m */,
+			);
+			name = CardViewController;
 			sourceTree = "<group>";
 		};
 		7532E61D182F9FEC00498BB0 /* GateWay */ = {
@@ -810,6 +828,7 @@
 			files = (
 				041564771833AD0700892EF1 /* ASIFormDataRequest.m in Sources */,
 				041564761833AD0700892EF1 /* ASIDownloadCache.m in Sources */,
+				04FFBB241839022700BA9199 /* CardLoginViewController.m in Sources */,
 				04740F23181B86710057B109 /* CustomButton.m in Sources */,
 				04740F1C181B85100057B109 /* UIImage+WebP.m in Sources */,
 				0415647B1833AD0700892EF1 /* ASINetworkQueue.m in Sources */,
@@ -822,6 +841,7 @@
 				7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */,
 				041564751833AD0700892EF1 /* ASIDataDecompressor.m in Sources */,
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
+				04FFBB2818390F3400BA9199 /* CardViewController.m in Sources */,
 				0415647D1833AD0700892EF1 /* Reachability.m in Sources */,
 				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
 				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
