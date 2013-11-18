@@ -184,7 +184,6 @@
         
         LoginViewController *cancelViewController = [[LoginViewController alloc]initWithNibName:nil bundle:nil];
         [self.navigationController popToViewController:cancelViewController animated:NO];
-        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"autoLogin"];
     }
 }
 
