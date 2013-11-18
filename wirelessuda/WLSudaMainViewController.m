@@ -9,6 +9,8 @@
 #import "WLSudaMainViewController.h"
 #import "GateWayLoginViewController.h"
 #import "LoginViewController.h"
+#import "GateWayViewController.h"
+#import "CardLoginViewController.h"
 
 @interface WLSudaMainViewController ()
 
@@ -98,9 +100,17 @@
         case 1:
         {
             //网关应用
-            LoginViewController *loginViewController = [[LoginViewController alloc]initWithNibName:nil bundle:nil];
-            [self.navigationController pushViewController:loginViewController animated:YES];
-            self.navigationController.navigationBar.hidden=NO;
+            NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+            if ([[defaults objectForKey:@"autoLogin"] isEqualToString:@"0"]) {
+                GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
+                [self.navigationController pushViewController:appViewController animated:NO];
+                appViewController.navigationController.navigationBar.hidden=NO;
+            }
+            else{
+                LoginViewController *loginViewController = [[LoginViewController alloc]initWithNibName:nil bundle:nil];
+                [self.navigationController pushViewController:loginViewController animated:YES];
+                self.navigationController.navigationBar.hidden=NO;
+            }
         }
             break;
         case 2:
@@ -116,6 +126,9 @@
         case 4:
         {
             //苏大通
+            CardLoginViewController *cardLoginViewController=[[CardLoginViewController alloc]initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:cardLoginViewController animated:YES];
+            cardLoginViewController.navigationController.navigationBar.hidden=NO;
         }
             break;
         case 5:

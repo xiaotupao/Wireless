@@ -21,6 +21,12 @@
     }else if ([password isEqualToString:@""]){
         return @"2";
     }else if ([self.status isEqualToString:@"0"]){
+        NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+        
+        [defaults setObject:username forKey:@"username"];
+        [defaults setObject:password forKey:@"password"];
+        [defaults synchronize];
+        NSLog(@"Data saved!");
         return @"0";
     }else if (self.status==nil||[self.status isEqualToString:@"1"]){
         return @"3";

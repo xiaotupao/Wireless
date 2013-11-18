@@ -15,6 +15,8 @@
 @end
 
 @implementation LoginViewController
+@synthesize autoLogin;
+@synthesize btnAutoLogin;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +24,7 @@
     if (self) {
         // Custom initialization
         self.navigationItem.title = @"首页";
+        autoLogin=@"0";
     }
     return self;
 }
@@ -89,16 +92,16 @@
     [subBackground addSubview:btnForget];
     
     #pragma mark - 自动登录
-    UIButton* btnAutoLogin=[UIButton buttonWithType:UIButtonTypeCustom];
+    btnAutoLogin=[UIButton buttonWithType:UIButtonTypeCustom];
     btnAutoLogin.frame=CGRectMake(170, 320, 130, 40);
     btnAutoLogin.titleLabel.font=[UIFont boldSystemFontOfSize:15];
     [btnAutoLogin setTitle:@"允许自动登录" forState:UIControlStateNormal];
     [btnAutoLogin setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     btnAutoLogin.showsTouchWhenHighlighted=YES;
-    [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login_frame"] forState:UIControlStateNormal];
-    [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login2"] forState:UIControlStateSelected];
-    BOOL b=[[[NSUserDefaults standardUserDefaults] objectForKey:@"autoLogin"] boolValue];
-    btnAutoLogin.selected = b;
+//    [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login_frame"] forState:UIControlStateNormal];
+    [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login2"] forState:UIControlStateNormal];
+    btnAutoLogin.tag=0;
+    
     [btnAutoLogin addTarget:self action:@selector(onAutoLoginClick:) forControlEvents:UIControlEventTouchUpInside];
     [subBackground addSubview:btnAutoLogin];
     
@@ -132,6 +135,13 @@
     
     NSString *result=[loginValidate validateLogin:usernameText.text withPassword:passwordText.text];
     if ([result isEqualToString:@"0"]) {
+        if ([autoLogin isEqualToString:@"0"]) {
+            [[NSUserDefaults standardUserDefaults] setObject:@"0" forKey:@"autoLogin"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }else{
+            [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"autoLogin"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
         GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
         [self.navigationController pushViewController:appViewController animated:NO];
         appViewController.navigationController.navigationBar.hidden=NO;
@@ -231,9 +241,17 @@
 #pragma mark - 自动登录按钮
 -(void)onAutoLoginClick:(UIButton*)btn
 {
-    btn.selected=!btn.selected;
-    [[NSUserDefaults standardUserDefaults] setBool:btn.selected forKey:@"autoLogin"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    if (btn.tag==0) {
+        btn.tag=1;
+        NSLog(@"%d",btn.tag);
+        [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login_frame"] forState:UIControlStateNormal];
+        autoLogin=@"1";
+    }else if(btn.tag==1){
+        btn.tag=0;
+        NSLog(@"%d",btn.tag);
+        [btnAutoLogin setImage:[UIImage imageNamed:@"auto_login2"] forState:UIControlStateNormal];
+        autoLogin=@"0";
+    }
 }
 
 #pragma mark - 触摸键盘消失

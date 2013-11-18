@@ -17,5 +17,6 @@
     UITextField *passwordText;
 }
 
-
+@property (strong, nonatomic)NSString *autoLogin;
+@property (strong, nonatomic)UIButton* btnAutoLogin;
 @end
