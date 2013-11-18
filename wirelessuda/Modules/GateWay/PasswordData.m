@@ -56,4 +56,27 @@
     return response;
 }
 
+- (NSString *)validataChangePassword:(NSString *)username withPassword:(NSString *)password withNewPassword:(NSString *) newpassword
+{
+    GateWayModel *gatewayModel = [GateWayModel shareInstance];
+    gatewayModel.delegate = self;
+    [gatewayModel start:@"changePassword" withUrl:@"http://jsglxt.suda.edu.cn/api_changePsd.action" withParam1:username withParam2:password withParam3:newpassword withParam4:nil];
+    if ([username isEqualToString:@""]) {
+        return @"1";
+    }else if ([password isEqualToString:@""]){
+        return @"2";
+    }else if ([self.status isEqualToString:@"0"]){
+        return @"0";
+    }else if (self.status==nil||[self.status isEqualToString:@"1"]){
+        return @"3";
+    }
+    return nil;
+}
+
+-(void)getChangePasswordResult:(NSString *)status
+{
+    self.status = status;
+    
+}
+
 @end

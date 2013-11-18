@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "GateWayModel.h"
+#import "ChangePasswordViewController.h"
+#import "BandingPhoneViewController.h"
 
 @interface GateWayViewController : UIViewController<GateWayDelegtate>
 {
-    UIViewController *openView;//视图
+    ChangePasswordViewController *changeOpenView;
+    BandingPhoneViewController *bandingOpenView;
     CGFloat span;
+    UITextField *oldPsd;
+    UITextField *newPsd;
+    UITextField *conformPsd;
 }
 
 @property (strong, nonatomic)UIImageView *userPhoto;

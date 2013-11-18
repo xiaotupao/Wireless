@@ -26,16 +26,18 @@
     if ([tag isEqualToString:@"login"]) {
         NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&password=%@",url,param1,param2];
         NSURL *urlLast=[NSURL URLWithString:urlString];
-        NSLog(@"url=%@",urlString);
         ASIHTTPRequest *request=[ASIHTTPRequest requestWithURL:urlLast];
         request.delegate=self;
         request.tag=Login;
         [request startSynchronous];
     }
     else if ([tag isEqualToString:@"changePassword"]){
-//        NSString *urlString = [NSString stringWithFormat:@"%@?%@&%@&%@",param1,param1];
-        
-//        [netWorkQueue addOperation:requestForm];
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&password=%@&newPassword=%@",url,param1,param2,param3];
+        NSURL *urlLast=[NSURL URLWithString:urlString];
+        ASIHTTPRequest *request=[ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate=self;
+        request.tag=ChangePassWord;
+        [request startSynchronous];
     }
 
     
@@ -45,37 +47,28 @@
 #pragma mark－requestFinish回调函数
 -(void)requestFinished:(ASIHTTPRequest *)request
 {
-//    if (request.tag==Login) {
-//        [delegate getLoginResult:@"000000"];
-//    }
-    //[delegate getLoginResult:@"000000"];
     NSString *responseString=request.responseString;
     if (request.tag==Login) {
         if (responseString==nil) {
-            [delegate getLoginResult:@"0"];
+            [delegate getLoginResult:@"1"];
         }else{
-        NSDictionary *result=[responseString JSONValue];
-        NSString *status=[result objectForKey:@"status"];
-        [delegate getLoginResult:status];
+            NSDictionary *result=[responseString JSONValue];
+            NSString *status=[result objectForKey:@"status"];
+            [delegate getLoginResult:status];
         }
     }
-//    else if (request.tag==ChangePassWord ){
-//        NSDictionary *result = [responseString JSONValue];
-//        NSString *status = [result objectForKey:@"status"];
-//        [delegate getChangePasswordResult:status];
-//    }
+    else if (request.tag==ChangePassWord){
+        if (responseString == nil) {
+            [delegate getChangePasswordResult:@"1"];
+        }else
+        {
+            NSDictionary *result = [responseString JSONValue];
+            NSString *status = [result objectForKey:@"status"];
+            [delegate getChangePasswordResult:status];
+        }
+    }
 }
-//-(void)Demo
-//{
-//    GateWayModel *gateWayModel=[GateWayModel shareInstance];
-//    [gateWayModel startLogin:Login withUrl:url withParam1:username withParam2:password withParam3:Nil withParam4:nil];
-//    gateWayModel.delegate=self;
-//}
-//
-//-(void)getLoginResult:(NSString *)status
-//{
-//
-//}
+
 @end
 
 
