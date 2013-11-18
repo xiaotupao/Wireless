@@ -78,6 +78,12 @@
 		04C2E3DE18350BCE00F8F1CE /* LoginValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */; };
 		04FFBB241839022700BA9199 /* CardLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB231839022700BA9199 /* CardLoginViewController.m */; };
 		04FFBB2818390F3400BA9199 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB2718390F3400BA9199 /* CardViewController.m */; };
+		04FFBB2B183A225D00BA9199 /* GuaShiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB2A183A225D00BA9199 /* GuaShiViewController.m */; };
+		04FFBB2E183A30DE00BA9199 /* ChangeCardPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB2D183A30DE00BA9199 /* ChangeCardPasswordViewController.m */; };
+		04FFBB31183A31A500BA9199 /* ConsumptionSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB30183A31A500BA9199 /* ConsumptionSearchViewController.m */; };
+		04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB33183A31C300BA9199 /* PickCardViewController.m */; };
+		04FFBB36183A39B900BA9199 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FFBB35183A39B900BA9199 /* QuartzCore.framework */; };
+		04FFBB3A183A401E00BA9199 /* ConsumptionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
 		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
@@ -240,6 +246,17 @@
 		04FFBB231839022700BA9199 /* CardLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLoginViewController.m; sourceTree = "<group>"; };
 		04FFBB2618390F3400BA9199 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		04FFBB2718390F3400BA9199 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		04FFBB29183A225D00BA9199 /* GuaShiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuaShiViewController.h; sourceTree = "<group>"; };
+		04FFBB2A183A225D00BA9199 /* GuaShiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuaShiViewController.m; sourceTree = "<group>"; };
+		04FFBB2C183A30DE00BA9199 /* ChangeCardPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeCardPasswordViewController.h; sourceTree = "<group>"; };
+		04FFBB2D183A30DE00BA9199 /* ChangeCardPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCardPasswordViewController.m; sourceTree = "<group>"; };
+		04FFBB2F183A31A500BA9199 /* ConsumptionSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionSearchViewController.h; sourceTree = "<group>"; };
+		04FFBB30183A31A500BA9199 /* ConsumptionSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionSearchViewController.m; sourceTree = "<group>"; };
+		04FFBB32183A31C200BA9199 /* PickCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickCardViewController.h; sourceTree = "<group>"; };
+		04FFBB33183A31C300BA9199 /* PickCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickCardViewController.m; sourceTree = "<group>"; };
+		04FFBB35183A39B900BA9199 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04FFBB38183A401E00BA9199 /* ConsumptionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionCellView.h; sourceTree = "<group>"; };
+		04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionCellView.m; sourceTree = "<group>"; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -279,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FFBB36183A39B900BA9199 /* QuartzCore.framework in Frameworks */,
 				755B69BD1833CF50007DBEAE /* SystemConfiguration.framework in Frameworks */,
 				755B69BB1833CF48007DBEAE /* MobileCoreServices.framework in Frameworks */,
 				755B69B91833CF3A007DBEAE /* libz.dylib in Frameworks */,
@@ -537,6 +555,7 @@
 		04BFC709181C847F00B1CF88 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				04FFBB37183A3EE600BA9199 /* CardCustomView */,
 				04FFBB2518390B9D00BA9199 /* CardViewController */,
 			);
 			path = Card;
@@ -577,8 +596,25 @@
 				04FFBB231839022700BA9199 /* CardLoginViewController.m */,
 				04FFBB2618390F3400BA9199 /* CardViewController.h */,
 				04FFBB2718390F3400BA9199 /* CardViewController.m */,
+				04FFBB29183A225D00BA9199 /* GuaShiViewController.h */,
+				04FFBB2A183A225D00BA9199 /* GuaShiViewController.m */,
+				04FFBB2C183A30DE00BA9199 /* ChangeCardPasswordViewController.h */,
+				04FFBB2D183A30DE00BA9199 /* ChangeCardPasswordViewController.m */,
+				04FFBB2F183A31A500BA9199 /* ConsumptionSearchViewController.h */,
+				04FFBB30183A31A500BA9199 /* ConsumptionSearchViewController.m */,
+				04FFBB32183A31C200BA9199 /* PickCardViewController.h */,
+				04FFBB33183A31C300BA9199 /* PickCardViewController.m */,
 			);
 			name = CardViewController;
+			sourceTree = "<group>";
+		};
+		04FFBB37183A3EE600BA9199 /* CardCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				04FFBB38183A401E00BA9199 /* ConsumptionCellView.h */,
+				04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */,
+			);
+			name = CardCustomView;
 			sourceTree = "<group>";
 		};
 		7532E61D182F9FEC00498BB0 /* GateWay */ = {
@@ -647,6 +683,7 @@
 		755E148F18043D8D00C7925B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04FFBB35183A39B900BA9199 /* QuartzCore.framework */,
 				755B69BC1833CF50007DBEAE /* SystemConfiguration.framework */,
 				755B69BA1833CF48007DBEAE /* MobileCoreServices.framework */,
 				755B69B81833CF3A007DBEAE /* libz.dylib */,
@@ -671,7 +708,6 @@
 				04740F27181B86870057B109 /* WLSudaMainViewController.h */,
 				04740F28181B86870057B109 /* WLSudaMainViewController.m */,
 				755E14A218043D8D00C7925B /* Images.xcassets */,
-				753129341837C7B600008D5D /* 1.png */,
 				7532E6D41831379A00498BB0 /* 2.png */,
 				755E149718043D8D00C7925B /* Supporting Files */,
 			);
@@ -795,7 +831,6 @@
 				0410094B1835035400BA4835 /* auto_login_frame@2x.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
 				041009531835035400BA4835 /* login_bg@2x.jpg in Resources */,
-				753129351837C7B600008D5D /* 1.png in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
 				0410094F1835035400BA4835 /* btn_press.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,
@@ -845,9 +880,11 @@
 				04740F14181B85100057B109 /* SDWebImageDecoder.m in Sources */,
 				04FFBB2818390F3400BA9199 /* CardViewController.m in Sources */,
 				0415647D1833AD0700892EF1 /* Reachability.m in Sources */,
+				04FFBB2B183A225D00BA9199 /* GuaShiViewController.m in Sources */,
 				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
 				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
 				041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */,
+				04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */,
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
 				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
 				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
@@ -872,10 +909,13 @@
 				0415647A1833AD0700892EF1 /* ASIInputStream.m in Sources */,
 				041564BD1833B93F00892EF1 /* SBJsonStreamParserState.m in Sources */,
 				041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */,
+				04FFBB2E183A30DE00BA9199 /* ChangeCardPasswordViewController.m in Sources */,
 				041564791833AD0700892EF1 /* ASIHTTPRequest.m in Sources */,
 				04740F13181B85100057B109 /* SDWebImageCompat.m in Sources */,
 				04740F11181B85100057B109 /* NSData+GIF.m in Sources */,
+				04FFBB3A183A401E00BA9199 /* ConsumptionCellView.m in Sources */,
 				04740F10181B85100057B109 /* MKAnnotationView+WebCache.m in Sources */,
+				04FFBB31183A31A500BA9199 /* ConsumptionSearchViewController.m in Sources */,
 				04740F12181B85100057B109 /* SDImageCache.m in Sources */,
 				04740F29181B86870057B109 /* WirelessudaAppDelegate.m in Sources */,
 				041564BA1833B93F00892EF1 /* SBJsonStreamParser.m in Sources */,
