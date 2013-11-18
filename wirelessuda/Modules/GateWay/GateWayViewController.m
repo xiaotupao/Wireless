@@ -8,8 +8,8 @@
 
 #import "GateWayViewController.h"
 #import "JWFolders.h"
-#import "ChangePasswordViewController.h"
-#import "BandingPhoneViewController.h"
+#import "LoginViewController.h"
+#import "PasswordData.h"
 
 @interface GateWayViewController ()
 
@@ -103,16 +103,27 @@
     NSLog(@"%d",button.tag);
     if(button.tag == 0)
     {
-        openView = nil;
-        openView = [[ChangePasswordViewController alloc]initWithNibName:nil bundle:Nil];
+        changeOpenView = nil;
+        changeOpenView = [[ChangePasswordViewController alloc]init];
+        oldPsd.text = [changeOpenView getOldPsd];
+        newPsd.text = [changeOpenView getNewPsd];
+        conformPsd.text = [changeOpenView getConformPsd];
+        changeOpenView.confirm = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        changeOpenView.confirm.frame = CGRectMake(120, self.view.bounds.size.height-40, 80, 30);
+        [changeOpenView.confirm setTitle:@"确认修改" forState:UIControlStateNormal];
+        [changeOpenView.confirm addTarget:self action:@selector(onConfirmClick) forControlEvents:UIControlEventTouchUpInside];
+        [changeOpenView.view addSubview:changeOpenView.confirm];
+        
+        CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 140 - span);
+        [JWFolders openFolderWithContentView:changeOpenView.view position:openPoint containerView:self.view sender:self direction:0];
+        
     }
-    if (button.tag ==1) {
-        openView = nil;
-        openView = [[BandingPhoneViewController alloc]initWithNibName:nil bundle:nil];
+    if(button.tag == 1) {
+        bandingOpenView = nil;
+        bandingOpenView = [[BandingPhoneViewController alloc]initWithNibName:nil bundle:nil];
+        CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 140 - span);
+        [JWFolders openFolderWithContentView:bandingOpenView.view position:openPoint containerView:self.view sender:self direction:0];
     }
-    
-    CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 140 - span);
-    [JWFolders openFolderWithContentView:openView.view position:openPoint containerView:self.view sender:self direction:0];
 }
 
 //键盘回收
@@ -150,11 +161,31 @@
         [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+deltaY, self.view.frame.size.width , self.view.frame.size.height)];
     }];
 }
--(void)viewWillAppear:(BOOL)animated
+
+#pragma mark - 确认按钮
+- (void)onConfirmClick
 {
-    [super viewWillAppear:YES];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    self.navigationController.navigationBar.hidden=NO;
+    UILabel *response = [PasswordData judgePassword:oldPsd andNewPassword:newPsd andConfirmPassword:conformPsd];
+    if (!(response.text == nil)) {
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = response.text;
+        hud.margin = 12.0f;
+        hud.yOffset = 180.0f;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:2];
+    }
+    
+    PasswordData *passwordData = [[PasswordData alloc]init];
+    NSString *result = [passwordData validataChangePassword:@"sunxu" withPassword:oldPsd.text withNewPassword:newPsd.text];
+    if ([result isEqualToString:@"0"]) {
+        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:nil message:@"修改密码成功!请重新登录!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+        
+        LoginViewController *cancelViewController = [[LoginViewController alloc]initWithNibName:nil bundle:nil];
+        [self.navigationController popToViewController:cancelViewController animated:NO];
+        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"autoLogin"];
+    }
 }
 
 - (void)didReceiveMemoryWarning

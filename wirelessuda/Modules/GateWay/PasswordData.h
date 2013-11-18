@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GateWayModel.h"
 
-@interface PasswordData : NSObject
+@interface PasswordData : NSObject<GateWayDelegtate>
+
+@property (strong, nonatomic)NSString *status;
 
 + (UILabel *)judgePassword:(UITextField *)beformPsdText andNewPassword:(UITextField *)newPsdText andConfirmPassword:(UITextField *)conformPsdText;
+
+- (NSString *)validataChangePassword:(NSString *)username withPassword:(NSString *)password withNewPassword:(NSString *) newpassword;
 
 @end

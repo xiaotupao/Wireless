@@ -31,6 +31,5 @@
 -(void)getLoginResult:(NSString *)status
 {
     self.status=status;
-    NSLog(@".....%@",status);
 }
 @end

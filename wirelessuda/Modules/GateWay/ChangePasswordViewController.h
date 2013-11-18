@@ -21,6 +21,9 @@
 
 @property (nonatomic, strong)NSMutableArray *passwordArray;
 @property (nonatomic, strong)NSMutableArray *placeholderArray;
-@property (nonatomic, strong)NSString *nowStatus;
+@property (nonatomic, strong)UIButton *confirm;
+- (NSString *)getOldPsd;
+- (NSString *)getNewPsd;
+- (NSString *)getConformPsd;
 
 @end
