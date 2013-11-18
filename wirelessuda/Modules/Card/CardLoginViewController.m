@@ -58,7 +58,7 @@
     passwordLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 180, 60, 35)];
     passwordLabel.text = @"  密码:";
     passwordField=[[UITextField alloc] initWithFrame:CGRectMake(90, 180, 200, 35)];
-    passwordField.placeholder=@"请输入网关密码";
+    passwordField.placeholder=@"请输入苏大通密码";
     passwordField.contentVerticalAlignment=UIControlContentVerticalAlignmentCenter;
     passwordField.secureTextEntry = YES;
     passwordField.backgroundColor=[UIColor whiteColor];
