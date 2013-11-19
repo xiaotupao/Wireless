@@ -10,4 +10,13 @@
 
 @interface ConsumptionCellView : UITableViewCell
 
+@property(strong, nonatomic)UILabel *turnover;
+@property(strong, nonatomic)UILabel *turnoverNumber;
+@property(strong, nonatomic)UILabel *balance;
+@property(strong, nonatomic)UILabel *balanceNumber;
+
+@property(strong, nonatomic)UILabel *time;
+@property(strong, nonatomic)UILabel *place;
+@property(strong, nonatomic)UILabel *type;
+
 @end
