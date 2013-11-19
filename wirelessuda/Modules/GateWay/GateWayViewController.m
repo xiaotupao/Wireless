@@ -108,8 +108,6 @@
         changePasswordView = [[ChangePasswordView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
         changePasswordView.delegate=self;
         
-        [changePasswordView.confirmButton addTarget:self action:@selector(onConfirmClick:) forControlEvents:UIControlEventTouchUpInside];
-        
         CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height-140-span);
         [JWFolders openFolderWithContentView:changePasswordView position:openPoint containerView:self.view sender:self direction:0];
         
@@ -166,31 +164,6 @@
     [UIView animateWithDuration:0.25f animations:^{
         [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+deltaY, self.view.frame.size.width , self.view.frame.size.height)];
     }];
-}
-
-#pragma mark - 确认按钮
-- (void)onConfirmClick:(id)sender	
-{
-//    UILabel *response = [PasswordData judgePassword:oldPsd andNewPassword:newPsd andConfirmPassword:conformPsd];
-//    if (!(response.text == nil)) {
-//        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//        hud.mode = MBProgressHUDModeText;
-//        hud.labelText = response.text;
-//        hud.margin = 12.0f;
-//        hud.yOffset = 180.0f;
-//        hud.removeFromSuperViewOnHide = YES;
-//        [hud hide:YES afterDelay:2];
-//    }
-//    
-//    PasswordData *passwordData = [[PasswordData alloc]init];
-//    NSString *result = [passwordData validataChangePassword:@"sunxu" withPassword:oldPsd.text withNewPassword:newPsd.text];
-//    if ([result isEqualToString:@"0"]) {
-//        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:nil message:@"修改密码成功!请重新登录!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//        [alert show];
-//        LoginViewController *cancelViewController = [[LoginViewController alloc]initWithNibName:nil bundle:nil];
-//        [self.navigationController popToViewController:cancelViewController animated:NO];
-//        [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"autoLogin"];
-//    }
 }
 
 - (void)didReceiveMemoryWarning
