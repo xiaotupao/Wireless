@@ -78,6 +78,13 @@
     if (cell == nil) {
         cell = [[ConsumptionCellView alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellWithIdentifier];
     }
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:210/255.0 green:210/255.0 blue:210/255.0 alpha:1];
+    }
+    else
+    {
+        cell.backgroundColor = [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1];
+    }
     cell.turnoverNumber.text = [turnover objectAtIndex:indexPath.row];
     cell.balanceNumber.text = [balance objectAtIndex:indexPath.row];
     cell.type.text = [NSString stringWithFormat:@"交易类型:%@",[type objectAtIndex:indexPath.row]];
