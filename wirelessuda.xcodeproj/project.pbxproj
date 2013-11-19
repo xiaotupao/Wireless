@@ -84,13 +84,12 @@
 		04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB33183A31C300BA9199 /* PickCardViewController.m */; };
 		04FFBB36183A39B900BA9199 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FFBB35183A39B900BA9199 /* QuartzCore.framework */; };
 		04FFBB3A183A401E00BA9199 /* ConsumptionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */; };
+		04FFBB3D183B99DD00BA9199 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB3C183B99DD00BA9199 /* ChangePasswordView.m */; };
+		04FFBB40183BBA5600BA9199 /* BindPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB3F183BBA5600BA9199 /* BindPhoneView.m */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
-		7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */; };
-		7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */; };
 		7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6F218314E6F00498BB0 /* MBProgressHUD.m */; };
 		75528387182D478F008C9C70 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 75528386182D478F008C9C70 /* login.png */; };
-		755B69B218338930007DBEAE /* PasswordCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B69B118338930007DBEAE /* PasswordCellView.m */; };
 		755B69B51833BBA3007DBEAE /* PasswordData.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B69B41833BBA3007DBEAE /* PasswordData.m */; };
 		755B69B71833CF24007DBEAE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755B69B61833CF24007DBEAE /* CFNetwork.framework */; };
 		755B69B91833CF3A007DBEAE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 755B69B81833CF3A007DBEAE /* libz.dylib */; };
@@ -257,18 +256,16 @@
 		04FFBB35183A39B900BA9199 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04FFBB38183A401E00BA9199 /* ConsumptionCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionCellView.h; sourceTree = "<group>"; };
 		04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionCellView.m; sourceTree = "<group>"; };
+		04FFBB3B183B99DD00BA9199 /* ChangePasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordView.h; sourceTree = "<group>"; };
+		04FFBB3C183B99DD00BA9199 /* ChangePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordView.m; sourceTree = "<group>"; };
+		04FFBB3E183BBA5600BA9199 /* BindPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneView.h; sourceTree = "<group>"; };
+		04FFBB3F183BBA5600BA9199 /* BindPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneView.m; sourceTree = "<group>"; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
-		7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
-		7532E6ED18314CBA00498BB0 /* BandingPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandingPhoneViewController.h; sourceTree = "<group>"; };
-		7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandingPhoneViewController.m; sourceTree = "<group>"; };
 		7532E6F118314E6F00498BB0 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		7532E6F218314E6F00498BB0 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		75528386182D478F008C9C70 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
-		755B69B018338930007DBEAE /* PasswordCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordCellView.h; sourceTree = "<group>"; };
-		755B69B118338930007DBEAE /* PasswordCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordCellView.m; sourceTree = "<group>"; };
 		755B69B31833BBA3007DBEAE /* PasswordData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordData.h; sourceTree = "<group>"; };
 		755B69B41833BBA3007DBEAE /* PasswordData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordData.m; sourceTree = "<group>"; };
 		755B69B61833CF24007DBEAE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -634,10 +631,6 @@
 				041009391835004100BA4835 /* LoginViewController.m */,
 				7532E61E182F9FEC00498BB0 /* GateWayViewController.h */,
 				7532E61F182F9FEC00498BB0 /* GateWayViewController.m */,
-				7532E6EA183143AE00498BB0 /* ChangePasswordViewController.h */,
-				7532E6EB183143AE00498BB0 /* ChangePasswordViewController.m */,
-				7532E6ED18314CBA00498BB0 /* BandingPhoneViewController.h */,
-				7532E6EE18314CBA00498BB0 /* BandingPhoneViewController.m */,
 			);
 			name = GateWayViewController;
 			sourceTree = "<group>";
@@ -645,8 +638,10 @@
 		7532E622182FC6F900498BB0 /* GateWayView */ = {
 			isa = PBXGroup;
 			children = (
-				755B69B018338930007DBEAE /* PasswordCellView.h */,
-				755B69B118338930007DBEAE /* PasswordCellView.m */,
+				04FFBB3B183B99DD00BA9199 /* ChangePasswordView.h */,
+				04FFBB3C183B99DD00BA9199 /* ChangePasswordView.m */,
+				04FFBB3E183BBA5600BA9199 /* BindPhoneView.h */,
+				04FFBB3F183BBA5600BA9199 /* BindPhoneView.m */,
 			);
 			name = GateWayView;
 			sourceTree = "<group>";
@@ -872,7 +867,6 @@
 				04740F18181B85100057B109 /* SDWebImagePrefetcher.m in Sources */,
 				7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */,
 				041564571833ACD300892EF1 /* GateWayModel.m in Sources */,
-				7532E6EC183143AE00498BB0 /* ChangePasswordViewController.m in Sources */,
 				041564BF1833B93F00892EF1 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				755E149D18043D8D00C7925B /* main.m in Sources */,
 				7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */,
@@ -887,7 +881,6 @@
 				04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */,
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
 				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
-				7532E6EF18314CBA00498BB0 /* BandingPhoneViewController.m in Sources */,
 				755B69B51833BBA3007DBEAE /* PasswordData.m in Sources */,
 				04740F15181B85100057B109 /* SDWebImageDownloader.m in Sources */,
 				041564BC1833B93F00892EF1 /* SBJsonStreamParserAdapter.m in Sources */,
@@ -897,16 +890,17 @@
 				041564731833AD0700892EF1 /* ASIAuthenticationDialog.m in Sources */,
 				04740F17181B85100057B109 /* SDWebImageManager.m in Sources */,
 				0410093A1835004100BA4835 /* LoginViewController.m in Sources */,
-				755B69B218338930007DBEAE /* PasswordCellView.m in Sources */,
 				041564741833AD0700892EF1 /* ASIDataCompressor.m in Sources */,
 				04740F19181B85100057B109 /* UIButton+WebCache.m in Sources */,
 				04740F1B181B85100057B109 /* UIImage+MultiFormat.m in Sources */,
 				04740F24181B86710057B109 /* mainViewScrollView.m in Sources */,
+				04FFBB40183BBA5600BA9199 /* BindPhoneView.m in Sources */,
 				04740F1D181B85100057B109 /* UIImageView+WebCache.m in Sources */,
 				04740F16181B85100057B109 /* SDWebImageDownloaderOperation.m in Sources */,
 				041564B91833B93F00892EF1 /* SBJsonParser.m in Sources */,
 				04740F1A181B85100057B109 /* UIImage+GIF.m in Sources */,
 				0415647A1833AD0700892EF1 /* ASIInputStream.m in Sources */,
+				04FFBB3D183B99DD00BA9199 /* ChangePasswordView.m in Sources */,
 				041564BD1833B93F00892EF1 /* SBJsonStreamParserState.m in Sources */,
 				041489CF182DD26C00BC5B0B /* GateWayLoginViewController.m in Sources */,
 				04FFBB2E183A30DE00BA9199 /* ChangeCardPasswordViewController.m in Sources */,

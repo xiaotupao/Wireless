@@ -71,7 +71,7 @@
     UIButton* btnLogin=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     btnLogin.frame=CGRectMake(15, 260, 140, 44);
     [btnLogin setBackgroundImage:[UIImage imageNamed:@"login18"] forState:UIControlStateNormal];
-    [btnLogin addTarget:self action:@selector(onLoginClick) forControlEvents:UIControlEventTouchUpInside];
+    [btnLogin addTarget:self action:@selector(onLoginClick:) forControlEvents:UIControlEventTouchUpInside];
     [subBackground addSubview:btnLogin];
     
     #pragma mark - 返回UIButton
@@ -129,10 +129,10 @@
 }
 
 #pragma mark - 登录按钮
-- (void)onLoginClick
+- (void)onLoginClick:(id)sender
 {
     LoginValidate *loginValidate=[[LoginValidate alloc]init];
-    
+
     NSString *result=[loginValidate validateLogin:usernameText.text withPassword:passwordText.text];
     if ([result isEqualToString:@"0"]) {
         if ([autoLogin isEqualToString:@"0"]) {
@@ -169,61 +169,6 @@
         [passwordText becomeFirstResponder];
 
     }
-
-//    #pragma mark - 登录信息判断
-//    if (!usernameText||!usernameText.text||[@"" isEqualToString:[usernameText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]])
-//    {
-//        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//        hud.mode = MBProgressHUDModeText;
-//        hud.labelText = @"     请输入用户名！     ";
-//        hud.margin = 10.f;
-//        hud.yOffset = -60.f;
-//        hud.removeFromSuperViewOnHide = YES;
-//        [hud hide:YES afterDelay:2];
-//        [usernameText becomeFirstResponder];
-//        return;
-//    }
-//    if (!passwordText||!passwordText.text||[@"" isEqualToString:[passwordText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]])
-//    {
-//        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//        hud.mode = MBProgressHUDModeText;
-//        hud.labelText = @"     请输入密码！     ";
-//        hud.margin = 10.f;
-//        hud.yOffset = -60.f;
-//        hud.removeFromSuperViewOnHide = YES;
-//        [hud hide:YES afterDelay:2];
-//        [passwordText becomeFirstResponder];
-//        return;
-//    }
-//    
-//    #pragma mark - 检测网络情况
-//    
-//    #pragma mark - 服务端，取返回值，
-//    NSDictionary *rootDic = [UrlPost urlPOSTWithURL:@"http://jsglxt.suda.edu.cn/api_login.action" andObj1:usernameText.text andKey1:@"username" andObj2:passwordText.text andKey2:@"password"];
-//    NSString *status = [rootDic objectForKey:@"status"];
-//    
-//    if ([status isEqualToString:@"0"])
-//    {
-//        UserEntity *userEntity = [[UserEntity alloc] init];
-//        userEntity.username = usernameText.text;
-//        userEntity.password = passwordText.text;
-//        
-//        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"autoLogin"]) {
-//            [[NSUserDefaults standardUserDefaults] setObject:usernameText.text forKey:@"username"];
-//            [[NSUserDefaults standardUserDefaults] synchronize];
-//            
-//            [[NSUserDefaults standardUserDefaults] setObject:passwordText.text forKey:@"password"];
-//            [[NSUserDefaults standardUserDefaults] synchronize];
-//        }
-//        
-//        GateWayViewController *appViewController = [[GateWayViewController alloc]initWithNibName:nil bundle:nil];
-//        [self.navigationController pushViewController:appViewController animated:YES];
-//    }
-//    else
-//    {
-//        UIAlertView * alert= [[UIAlertView alloc]initWithTitle:nil message:@"用户名密码不正确，请重新输入！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//        [alert show];
-//    }
 }
 
 #pragma mark - 返回按钮

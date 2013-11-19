@@ -7,23 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GateWayModel.h"
-#import "ChangePasswordViewController.h"
-#import "BandingPhoneViewController.h"
+#import "ChangePasswordView.h"
 
-@interface GateWayViewController : UIViewController<GateWayDelegtate>
+@interface GateWayViewController : UIViewController<ChangePasswordDelegate>
 {
-    ChangePasswordViewController *changeOpenView;
-    BandingPhoneViewController *bandingOpenView;
     CGFloat span;
-    UITextField *oldPsd;
-    UITextField *newPsd;
-    UITextField *conformPsd;
 }
 
 @property (strong, nonatomic)UIImageView *userPhoto;
 @property (strong, nonatomic)UILabel *userInfo;
 @property (strong, nonatomic)UIButton *appButton;
 @property (strong, nonatomic)NSMutableArray *appArray;
+@property (strong, nonatomic)NSString *oldPsd;
+@property (strong, nonatomic)NSString *changedPsd;
+@property (strong, nonatomic)ChangePasswordView *changePasswordView;
+
 
 @end
