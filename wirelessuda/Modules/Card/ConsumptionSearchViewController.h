@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConsumptionSearchViewController : UIViewController
+@interface ConsumptionSearchViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong, nonatomic)UITableView *tableView;
+@property (strong, nonatomic)NSMutableArray *turnover;
+@property (strong, nonatomic)NSMutableArray *balance;
+@property (strong, nonatomic)NSMutableArray *time;
+@property (strong, nonatomic)NSMutableArray *place;
+@property (strong, nonatomic)NSMutableArray *type;
 
 @end
