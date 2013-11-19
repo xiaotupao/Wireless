@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BandingPhoneViewController.h"
 #import "ChangePasswordView.h"
 
 @interface GateWayViewController : UIViewController<ChangePasswordDelegate>
 {
-    BandingPhoneViewController *bandingOpenView;
     CGFloat span;
 }
 

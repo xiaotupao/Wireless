@@ -113,10 +113,10 @@
         
     }
     if(button.tag == 1) {
-        bandingOpenView = nil;
-        bandingOpenView = [[BandingPhoneViewController alloc]initWithNibName:nil bundle:nil];
-        CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 140 - span);
-        [JWFolders openFolderWithContentView:bandingOpenView.view position:openPoint containerView:self.view sender:self direction:0];
+//        bandingOpenView = nil;
+//        bandingOpenView = [[BandingPhoneViewController alloc]initWithNibName:nil bundle:nil];
+//        CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 140 - span);
+//        [JWFolders openFolderWithContentView:bandingOpenView.view position:openPoint containerView:self.view sender:self direction:0];
     }
 }
 
