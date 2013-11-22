@@ -20,6 +20,7 @@
 @property (nonatomic, strong)UITextField *changedPsdField;
 @property (nonatomic, strong)UITextField *confirmPsdField;
 @property (nonatomic, strong)UIButton *confirmButton;
+@property (nonatomic, strong)NSString *status;
 @property (nonatomic, strong)id<ChangePasswordDelegate> delegate;
 
 @end

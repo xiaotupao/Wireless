@@ -7,7 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GateWayModel.h"
 
-@interface BindPhoneView : UIView
+@protocol BindPhoneDelegate;
+
+@interface BindPhoneView : UIView<GateWayDelegtate>
+
+@property (nonatomic, strong)UITextField *phoneNumberText;
+@property (nonatomic, strong)UITextField *codeText;
+@property (nonatomic, strong)NSString *code;
+@property (nonatomic, strong)NSString *onstatus;
+@property (nonatomic, strong)id<BindPhoneDelegate> delegate;
+
+- (id)initWithFrame:(CGRect)frame withTag:(NSString *)tag;
+
+@end
+
+@protocol BindPhoneDelegate <NSObject>
+
+@optional
+
+-(void)getCode:(NSString *)code;
+-(void)getOnResult:(NSString *)result;
 
 @end

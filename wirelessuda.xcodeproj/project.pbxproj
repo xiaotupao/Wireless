@@ -106,6 +106,9 @@
 		755E14AC18043D8D00C7925B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755E149418043D8D00C7925B /* UIKit.framework */; };
 		755E14B418043D8D00C7925B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755E14B218043D8D00C7925B /* InfoPlist.strings */; };
 		755E14B618043D8D00C7925B /* wirelessudaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755E14B518043D8D00C7925B /* wirelessudaTests.m */; };
+		7560B399183F5E41003F34E8 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7560B398183F5E41003F34E8 /* 1.png */; };
+		7560B39C183F80B0003F34E8 /* BindPhoneVaildata.m in Sources */ = {isa = PBXBuildFile; fileRef = 7560B39B183F80B0003F34E8 /* BindPhoneVaildata.m */; };
+		75E21F0C183CE20800EEE74A /* GateWayVaildata.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E21F0B183CE20800EEE74A /* GateWayVaildata.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +289,11 @@
 		755E14B118043D8D00C7925B /* wirelessudaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wirelessudaTests-Info.plist"; sourceTree = "<group>"; };
 		755E14B318043D8D00C7925B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		755E14B518043D8D00C7925B /* wirelessudaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wirelessudaTests.m; sourceTree = "<group>"; };
+		7560B398183F5E41003F34E8 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		7560B39A183F80B0003F34E8 /* BindPhoneVaildata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneVaildata.h; sourceTree = "<group>"; };
+		7560B39B183F80B0003F34E8 /* BindPhoneVaildata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneVaildata.m; sourceTree = "<group>"; };
+		75E21F0A183CE20800EEE74A /* GateWayVaildata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayVaildata.h; sourceTree = "<group>"; };
+		75E21F0B183CE20800EEE74A /* GateWayVaildata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayVaildata.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +379,10 @@
 				755B69B41833BBA3007DBEAE /* PasswordData.m */,
 				04C2E3DC18350BCE00F8F1CE /* LoginValidate.h */,
 				04C2E3DD18350BCE00F8F1CE /* LoginValidate.m */,
+				75E21F0A183CE20800EEE74A /* GateWayVaildata.h */,
+				75E21F0B183CE20800EEE74A /* GateWayVaildata.m */,
+				7560B39A183F80B0003F34E8 /* BindPhoneVaildata.h */,
+				7560B39B183F80B0003F34E8 /* BindPhoneVaildata.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -704,6 +716,7 @@
 				04740F28181B86870057B109 /* WLSudaMainViewController.m */,
 				755E14A218043D8D00C7925B /* Images.xcassets */,
 				7532E6D41831379A00498BB0 /* 2.png */,
+				7560B398183F5E41003F34E8 /* 1.png */,
 				755E149718043D8D00C7925B /* Supporting Files */,
 			);
 			path = wirelessuda;
@@ -826,6 +839,7 @@
 				0410094B1835035400BA4835 /* auto_login_frame@2x.png in Resources */,
 				04740F41181B90DC0057B109 /* settings.png in Resources */,
 				041009531835035400BA4835 /* login_bg@2x.jpg in Resources */,
+				7560B399183F5E41003F34E8 /* 1.png in Resources */,
 				04740F43181B90DC0057B109 /* gateway.png in Resources */,
 				0410094F1835035400BA4835 /* btn_press.png in Resources */,
 				755E149B18043D8D00C7925B /* InfoPlist.strings in Resources */,
@@ -877,6 +891,7 @@
 				04FFBB2B183A225D00BA9199 /* GuaShiViewController.m in Sources */,
 				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
 				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
+				7560B39C183F80B0003F34E8 /* BindPhoneVaildata.m in Sources */,
 				041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */,
 				04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */,
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
@@ -914,6 +929,7 @@
 				04740F29181B86870057B109 /* WirelessudaAppDelegate.m in Sources */,
 				041564BA1833B93F00892EF1 /* SBJsonStreamParser.m in Sources */,
 				041564B81833B93F00892EF1 /* NSObject+SBJson.m in Sources */,
+				75E21F0C183CE20800EEE74A /* GateWayVaildata.m in Sources */,
 				041564C01833B93F00892EF1 /* SBJsonStreamWriterState.m in Sources */,
 				04740F2A181B86870057B109 /* WLSudaMainViewController.m in Sources */,
 				041564BB1833B93F00892EF1 /* SBJsonStreamParserAccumulator.m in Sources */,

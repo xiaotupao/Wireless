@@ -39,9 +39,38 @@
         request.tag=ChangePassWord;
         [request startSynchronous];
     }
-
-    
-
+    else if ([tag isEqualToString:@"userInfoTurnOver"]){
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&password=%@",url,param1,param2];
+        NSURL *urlLast = [NSURL URLWithString:urlString];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate = self;
+        request.tag = UserInfoTurnOver;
+        [request startSynchronous];
+    }
+    else if ([tag isEqualToString:@"userInfoBindPhone"]){
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&password=%@",url,param1,param2];
+        NSURL *urlLast = [NSURL URLWithString:urlString];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate = self;
+        request.tag = UserInfoBindPhone;
+        [request startSynchronous];
+    }
+    else if ([tag isEqualToString:@"code"]){
+        NSString *urlString = [NSString stringWithFormat:@"%@?phoneNum=%@",url,param1];
+        NSURL *urlLast = [NSURL URLWithString:urlString];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate = self;
+        request.tag = Code;
+        [request startSynchronous];
+    }
+    else if ([tag isEqualToString:@"onBind"]){
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&phoneNum=%@&code=%@&seqID=%@",url,param1,param2,param3,param4];
+        NSURL *urlLast = [NSURL URLWithString:urlString];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate = self;
+        request.tag = OnBind;
+        [request startSynchronous];
+    }
 }
 
 #pragma mark－requestFinish回调函数
@@ -65,6 +94,45 @@
             NSDictionary *result = [responseString JSONValue];
             NSString *status = [result objectForKey:@"status"];
             [delegate getChangePasswordResult:status];
+        }
+    }
+    else if (request.tag == UserInfoTurnOver){
+        if (responseString == nil) {
+            [delegate getUserInfoTurnOverResult:@"1"];
+        }else{
+            NSDictionary *result=[responseString JSONValue];
+            NSString *status=[result objectForKey:@"remaining_money"];
+            [delegate getUserInfoTurnOverResult:status];
+        }
+    }
+    else if (request.tag == UserInfoBindPhone){
+        if (responseString == nil) {
+            [delegate getUserInfoBindPhoneResult:@"4" withPhoneNumber:nil];
+        }else{
+            NSDictionary *result=[responseString JSONValue];
+            NSString *status=[result objectForKey:@"status"];
+            NSString *phoneNumber = [result objectForKey:@"phoneNum"];
+            [delegate getUserInfoBindPhoneResult:status withPhoneNumber:phoneNumber];
+        }
+    }
+    else if (request.tag == Code){
+        if (responseString == nil) {
+            [delegate getCodeResult:@"1"];
+        }
+        else{
+            NSDictionary *result = [responseString JSONValue];
+            NSString *status = [result objectForKey:@"seqID"];
+            [delegate getCodeResult:status];
+        }
+    }
+    else if (request.tag == OnBind){
+        if (responseString == nil) {
+            [delegate getOnBindResult:@"4"];
+        }
+        else{
+            NSDictionary *result = [responseString JSONValue];
+            NSString *status = [result objectForKey:@"status"];
+            [delegate getOnBindResult:status];
         }
     }
 }

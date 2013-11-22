@@ -9,6 +9,11 @@
 typedef enum {
     Login,
     ChangePassWord,
+    UserInfoTurnOver,
+    UserInfoBindPhone,
+    Code,
+    OnBind,
+    OffBind,
 } GateWayLine;
 
 #import <Foundation/Foundation.h>
@@ -30,6 +35,11 @@ typedef enum {
 @optional
 -(void)getLoginResult:(NSString *)status;
 -(void)getChangePasswordResult:(NSString *)status;
+-(void)getUserInfoTurnOverResult:(NSString *)status;
+-(void)getUserInfoBindPhoneResult:(NSString *)status withPhoneNumber:(NSString *)number;
+-(void)getCodeResult:(NSString *)status;
+-(void)getOnBindResult:(NSString *)status;
+-(void)getOffBindResult:(NSString *)status;
 
 @end
 

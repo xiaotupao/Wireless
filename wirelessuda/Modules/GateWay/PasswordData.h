@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic)NSString *status;
 
-+ (UILabel *)judgePassword:(UITextField *)beformPsdText andNewPassword:(UITextField *)newPsdText andConfirmPassword:(UITextField *)conformPsdText;
+- (NSString *)judgePassword:(UITextField *)beformPsdText andNewPassword:(UITextField *)newPsdText andConfirmPassword:(UITextField *)conformPsdText;
 
 - (NSString *)validataChangePassword:(NSString *)username withPassword:(NSString *)password withNewPassword:(NSString *) newpassword;
 
