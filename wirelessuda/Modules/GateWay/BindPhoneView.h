@@ -15,8 +15,13 @@
 
 @property (nonatomic, strong)UITextField *phoneNumberText;
 @property (nonatomic, strong)UITextField *codeText;
+@property (nonatomic, strong)UIButton *cancelBind;
+@property (nonatomic, strong)UILabel *identifyNumLabel;
+@property (nonatomic, strong)UITextField *identifyNumText;
+@property (nonatomic, strong)UIButton *confirmCancelBind;
 @property (nonatomic, strong)NSString *code;
 @property (nonatomic, strong)NSString *onstatus;
+@property (nonatomic, strong)NSString *offstatus;
 @property (nonatomic, strong)id<BindPhoneDelegate> delegate;
 
 - (id)initWithFrame:(CGRect)frame withTag:(NSString *)tag;
@@ -29,5 +34,6 @@
 
 -(void)getCode:(NSString *)code;
 -(void)getOnResult:(NSString *)result;
+-(void)getOffResult:(NSString *)result;
 
 @end

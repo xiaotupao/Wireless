@@ -122,7 +122,6 @@
 
 - (void)onClickOpen:(UIButton *)button
 {
-    NSLog(@"%d",button.tag);
     if(button.tag == 0)
     {
         if (bindPhoneView != nil) {
@@ -147,7 +146,7 @@
         {
             tag = @"1";
         }
-        bindPhoneView = [[BindPhoneView alloc]initWithFrame:CGRectMake(0, 0, 320, 200) withTag:@"0"];
+        bindPhoneView = [[BindPhoneView alloc]initWithFrame:CGRectMake(0, 0, 320, 200) withTag:tag];
         bindPhoneView.delegate = self;
         
         CGPoint openPoint = CGPointMake(0.0f, self.view.frame.size.height - 130 - span);
@@ -172,9 +171,6 @@
         [alertView show];
     }
     else if ([result isEqualToString:@"1"]) {
-        UIButton *bt = [[UIButton alloc]init];
-        bt.tag = 1;
-        [self onClickOpen:bt];
         UIAlertView *alertView=[[UIAlertView alloc]initWithTitle:nil message:@"手机绑定成功!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alertView show];
         [self.navigationController popViewControllerAnimated:YES];

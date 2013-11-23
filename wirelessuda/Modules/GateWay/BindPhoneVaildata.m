@@ -33,6 +33,18 @@
     return nil;
 }
 
+- (NSString *)judgeIdentify:(UITextField *)identifyText
+{
+    NSString *response = [[NSString alloc]init];
+    
+    if (!identifyText||!identifyText.text||[@"" isEqualToString:[identifyText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]]) {
+        response = @"请输入身份证号!";
+        return response;
+    }
+    
+    return  nil;
+}
+
 - (NSString *)validataCode:(NSString *)phoneNum
 {
     GateWayModel *gatewayModel = [GateWayModel shareInstance];
@@ -52,9 +64,24 @@
     [gatewayModel start:@"onBind" withUrl:@"http://jsglxt.suda.edu.cn/api_bindCellphone.action" withParam1:username withParam2:phoneNum withParam3:code withParam4:seq];
     if ([username isEqualToString:@""]) {
         return @"2";
-    }else if ([self.status isEqualToString:@"0"]){
+    }else if ([self.onstatus isEqualToString:@"0"]){
         return @"0";
-    }else if ([self.status isEqualToString:@"1"]){
+    }else if ([self.onstatus isEqualToString:@"1"]){
+        return @"1";
+    }
+    return nil;
+}
+
+- (NSString *)validataIdentify:(NSString *)username withIdentify:(NSString *)identify
+{
+    GateWayModel *gatewayModel = [GateWayModel shareInstance];
+    gatewayModel.delegate = self;
+    [gatewayModel start:@"offBind" withUrl:@"http://jsglxt.suda.edu.cn/api_cancelBind.action" withParam1:username withParam2:identify withParam3:nil withParam4:nil];
+    if ([username isEqualToString:@""]) {
+        return @"2";
+    }else if ([self.offstatus isEqualToString:@"0"]){
+        return @"0";
+    }else if ([self.offstatus isEqualToString:@"1"]){
         return @"1";
     }
     return nil;
@@ -67,7 +94,12 @@
 
 -(void)getOnBindResult:(NSString *)status
 {
-    self.status = status;
+    self.onstatus = status;
+}
+
+-(void)getOffBindResult:(NSString *)status
+{
+    self.offstatus = status;
 }
 
 @end

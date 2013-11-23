@@ -71,6 +71,14 @@
         request.tag = OnBind;
         [request startSynchronous];
     }
+    else if ([tag isEqualToString:@"offBind"]){
+        NSString *urlString = [NSString stringWithFormat:@"%@?username=%@&identifyNum=%@",url,param1,param2];
+        NSURL *urlLast = [NSURL URLWithString:urlString];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:urlLast];
+        request.delegate = self;
+        request.tag = OffBind;
+        [request startSynchronous];
+    }
 }
 
 #pragma mark－requestFinish回调函数
@@ -133,6 +141,16 @@
             NSDictionary *result = [responseString JSONValue];
             NSString *status = [result objectForKey:@"status"];
             [delegate getOnBindResult:status];
+        }
+    }
+    else if (request.tag == OffBind){
+        if (responseString == nil) {
+            [delegate getOffBindResult:@"4"];
+        }
+        else{
+            NSDictionary *result = [responseString JSONValue];
+            NSString *status = [result objectForKey:@"status"];
+            [delegate getOffBindResult:status];
         }
     }
 }

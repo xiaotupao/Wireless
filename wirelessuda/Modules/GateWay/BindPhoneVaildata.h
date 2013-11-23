@@ -12,12 +12,15 @@
 @interface BindPhoneVaildata : NSObject<GateWayDelegtate>
 
 @property(strong, nonatomic)NSString *code;
-@property(strong, nonatomic)NSString *status;
+@property(strong, nonatomic)NSString *onstatus;
+@property(strong, nonatomic)NSString *offstatus;
 
 - (NSString *)judgePhoneNum:(UITextField *)phoneNumberText;
 - (NSString *)judgeCode:(UITextField *)codeText;
+- (NSString *)judgeIdentify:(UITextField *)identifyText;
 
 - (NSString *)validataCode:(NSString *)phoneNum;
 - (NSString *)validataOn:(NSString *)username withPhone:(NSString *)phoneNum withCode:(NSString *)code withseqID:(NSString *)seq;
+- (NSString *)validataIdentify:(NSString *)username withIdentify:(NSString *)identify;
 
 @end
