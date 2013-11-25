@@ -86,6 +86,10 @@
 		04FFBB3A183A401E00BA9199 /* ConsumptionCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */; };
 		04FFBB3D183B99DD00BA9199 /* ChangePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB3C183B99DD00BA9199 /* ChangePasswordView.m */; };
 		04FFBB40183BBA5600BA9199 /* BindPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FFBB3F183BBA5600BA9199 /* BindPhoneView.m */; };
+		752B70031841BD5400D57BD1 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 752B70021841BD5400D57BD1 /* WeatherModel.m */; };
+		752B70061841BD6A00D57BD1 /* WeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 752B70051841BD6A00D57BD1 /* WeatherData.m */; };
+		752B70091841BD8A00D57BD1 /* WeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 752B70081841BD8A00D57BD1 /* WeatherView.m */; };
+		752B700C1841BDB000D57BD1 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752B700B1841BDB000D57BD1 /* WeatherViewController.m */; };
 		7532E620182F9FEC00498BB0 /* GateWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E61F182F9FEC00498BB0 /* GateWayViewController.m */; };
 		7532E6D51831379A00498BB0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7532E6D41831379A00498BB0 /* 2.png */; };
 		7532E6F318314E6F00498BB0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E6F218314E6F00498BB0 /* MBProgressHUD.m */; };
@@ -263,6 +267,14 @@
 		04FFBB3C183B99DD00BA9199 /* ChangePasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordView.m; sourceTree = "<group>"; };
 		04FFBB3E183BBA5600BA9199 /* BindPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhoneView.h; sourceTree = "<group>"; };
 		04FFBB3F183BBA5600BA9199 /* BindPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPhoneView.m; sourceTree = "<group>"; };
+		752B70011841BD5400D57BD1 /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = SOURCE_ROOT; };
+		752B70021841BD5400D57BD1 /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = SOURCE_ROOT; };
+		752B70041841BD6A00D57BD1 /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = SOURCE_ROOT; };
+		752B70051841BD6A00D57BD1 /* WeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherData.m; sourceTree = SOURCE_ROOT; };
+		752B70071841BD8A00D57BD1 /* WeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherView.h; sourceTree = SOURCE_ROOT; };
+		752B70081841BD8A00D57BD1 /* WeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherView.m; sourceTree = SOURCE_ROOT; };
+		752B700A1841BDB000D57BD1 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = SOURCE_ROOT; };
+		752B700B1841BDB000D57BD1 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = SOURCE_ROOT; };
 		7532E61E182F9FEC00498BB0 /* GateWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GateWayViewController.h; sourceTree = "<group>"; };
 		7532E61F182F9FEC00498BB0 /* GateWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GateWayViewController.m; sourceTree = "<group>"; };
 		7532E6D41831379A00498BB0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -594,6 +606,9 @@
 		04BFC70E181C847F00B1CF88 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				752B6FFE1841BD0D00D57BD1 /* Model */,
+				752B70001841BD2E00D57BD1 /* WeatherView */,
+				752B6FFF1841BD1A00D57BD1 /* WeatherViewController */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -624,6 +639,35 @@
 				04FFBB39183A401E00BA9199 /* ConsumptionCellView.m */,
 			);
 			name = CardCustomView;
+			sourceTree = "<group>";
+		};
+		752B6FFE1841BD0D00D57BD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				752B70011841BD5400D57BD1 /* WeatherModel.h */,
+				752B70021841BD5400D57BD1 /* WeatherModel.m */,
+				752B70041841BD6A00D57BD1 /* WeatherData.h */,
+				752B70051841BD6A00D57BD1 /* WeatherData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		752B6FFF1841BD1A00D57BD1 /* WeatherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				752B700A1841BDB000D57BD1 /* WeatherViewController.h */,
+				752B700B1841BDB000D57BD1 /* WeatherViewController.m */,
+			);
+			name = WeatherViewController;
+			sourceTree = "<group>";
+		};
+		752B70001841BD2E00D57BD1 /* WeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				752B70071841BD8A00D57BD1 /* WeatherView.h */,
+				752B70081841BD8A00D57BD1 /* WeatherView.m */,
+			);
+			name = WeatherView;
 			sourceTree = "<group>";
 		};
 		7532E61D182F9FEC00498BB0 /* GateWay */ = {
@@ -798,6 +842,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "苏州大学信息化建设与管理中心";
 				TargetAttributes = {
+					755E148C18043D8D00C7925B = {
+						DevelopmentTeam = LF7KJ3HX7M;
+					};
 					755E14A718043D8D00C7925B = {
 						TestTargetID = 755E148C18043D8D00C7925B;
 					};
@@ -891,8 +938,11 @@
 				04FFBB2B183A225D00BA9199 /* GuaShiViewController.m in Sources */,
 				0415644F18339B5A00892EF1 /* UIView+Screenshot.m in Sources */,
 				041564C31833B93F00892EF1 /* SBJsonWriter.m in Sources */,
+				752B70091841BD8A00D57BD1 /* WeatherView.m in Sources */,
+				752B70061841BD6A00D57BD1 /* WeatherData.m in Sources */,
 				7560B39C183F80B0003F34E8 /* BindPhoneVaildata.m in Sources */,
 				041564C11833B93F00892EF1 /* SBJsonTokeniser.m in Sources */,
+				752B700C1841BDB000D57BD1 /* WeatherViewController.m in Sources */,
 				04FFBB34183A31C300BA9199 /* PickCardViewController.m in Sources */,
 				0415644D18339B5A00892EF1 /* JWFolders.m in Sources */,
 				041564BE1833B93F00892EF1 /* SBJsonStreamWriter.m in Sources */,
@@ -922,6 +972,7 @@
 				041564791833AD0700892EF1 /* ASIHTTPRequest.m in Sources */,
 				04740F13181B85100057B109 /* SDWebImageCompat.m in Sources */,
 				04740F11181B85100057B109 /* NSData+GIF.m in Sources */,
+				752B70031841BD5400D57BD1 /* WeatherModel.m in Sources */,
 				04FFBB3A183A401E00BA9199 /* ConsumptionCellView.m in Sources */,
 				04740F10181B85100057B109 /* MKAnnotationView+WebCache.m in Sources */,
 				04FFBB31183A31A500BA9199 /* ConsumptionSearchViewController.m in Sources */,
@@ -1058,11 +1109,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wirelessuda/wirelessuda-Prefix.pch";
 				INFOPLIST_FILE = "wirelessuda/wirelessuda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1073,11 +1126,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wirelessuda/wirelessuda-Prefix.pch";
 				INFOPLIST_FILE = "wirelessuda/wirelessuda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
